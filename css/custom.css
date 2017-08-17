@@ -1,0 +1,149 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:focus{
+	outline: none;
+}
+@font-face {
+    font-family: OpenSans-Regular; /* имя шрифта для CSS правил */
+    src: local('OpenSans-Regular'), /* проверяем наличие шрифта в ОС пользователя */
+         url(../fonts/OpenSans-Regular.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+}
+#top{
+	background-color: #f7f7f7;
+	padding: 10px;
+}
+.half{
+	width: 50%;
+}
+header{
+	padding: 35px;
+}
+ul{
+	list-style: none;
+	margin-bottom: 0!important;
+	padding: 0;
+}
+ul.top-list li{
+	display: inline-block;
+	margin-right: 50px;
+}
+ul.top-list li:last-child{
+	margin-right: 0;
+}
+ul.top-list li a{
+	color: #aeaeae;
+	font-size: 13.95px;
+	font-family: OpenSans-Regular;
+}
+.numbers{
+	color: #aeaeae;
+	font-size: 13.95px;
+	font-family: OpenSans-Regular;
+	text-align: right;
+}
+.numbers p{
+	border-right: 1px solid #b3b3b3;
+	display: inline-block;
+	margin-bottom: 0;
+	padding: 0 5px;
+}
+.numbers p:last-child{
+	border-right: 1px solid transparent;
+}
+.quick-search-wrapper{
+	position: relative;
+}
+.quick-search-wrapper .form-group{
+	width: 100%;
+}
+.quick-search-wrapper .form-group input{
+	border-radius: 30px;
+	font-size: 13.95px;
+	font-weight: bold;
+	width: 100%;
+}
+button#quick-search{
+	background: transparent;
+	color: #000;
+	font-size: 0;
+	font-family: OpenSans-Regular;
+	padding: 0;
+	position: absolute;
+	right: 25px;
+	top: 1px;
+}
+button#quick-search i{
+	font-size: 30px;
+}
+.form-control.search::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #000!important;
+	font-family: OpenSans-Regular;
+}
+.form-control.search::-moz-placeholder { /* Firefox 19+ */
+	color: #000!important;
+	font-family: OpenSans-Regular;
+}
+.form-control.search:-ms-input-placeholder { /* IE 10+ */
+	color: #000!important;
+	font-family: OpenSans-Regular;
+}
+.form-control.search:-moz-placeholder { /* Firefox 18- */
+	color: #000!important;
+	font-family: OpenSans-Regular;
+}
+ul.personal{
+	color: #000;
+	min-height: 34px;
+	line-height: 34px;
+}
+ul.personal li{
+	display: inline-block;
+	margin-right: 30px;
+}
+ul.personal li:last-child{
+	margin-right: 0;
+}
+ul.personal li.dropdown{
+	background: url(../image/ic_account.png) no-repeat left top;
+	padding-left: 40px;
+}
+ul.personal li.dropdown:hover .dropdown-menu{
+	display: block;
+}
+ul.personal li.dropdown a{
+	background: url(../image/arrow-down.png) no-repeat right center;
+	padding-right: 20px;
+}
+ul.personal li.wish{
+	background: url(../image/ic_star.png) no-repeat left top;
+	padding-left: 40px;
+}
+ul.personal li.wish a{
+	background: url(../image/+25.png) no-repeat right top;
+	padding-right: 40px
+}
+ul.personal li.cart{
+	background: url(../image/ic_cart.png) no-repeat left top;
+	padding-left: 40px;
+}
+ul.personal li.cart a{
+	background: url(../image/+99.png) no-repeat right top;
+	padding-right: 40px;
+}
+ul.personal a{
+	color: #000;
+	display: block;
+	font-family: OpenSans-Regular;
+	font-weight: bold;
+}
+div.dropdown-menu{
+	left: 60px;
+	margin-top: 0;
+	padding: 15px 25px;
+}
+div.dropdown-menu ul a{
+	font-size: 13px;
+}
