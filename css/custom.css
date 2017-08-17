@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 *:focus{
-	outline: none;
+	outline: none!important;
 }
 @font-face {
     font-family: OpenSans-Regular; /* имя шрифта для CSS правил */
@@ -78,19 +78,19 @@ button#quick-search i{
 	font-size: 30px;
 }
 .form-control.search::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-	color: #000!important;
+	color: #000;
 	font-family: OpenSans-Regular;
 }
 .form-control.search::-moz-placeholder { /* Firefox 19+ */
-	color: #000!important;
+	color: #000;
 	font-family: OpenSans-Regular;
 }
 .form-control.search:-ms-input-placeholder { /* IE 10+ */
-	color: #000!important;
+	color: #000;
 	font-family: OpenSans-Regular;
 }
 .form-control.search:-moz-placeholder { /* Firefox 18- */
-	color: #000!important;
+	color: #000;
 	font-family: OpenSans-Regular;
 }
 ul.personal{
@@ -120,17 +120,22 @@ ul.personal li.wish{
 	background: url(../image/ic_star.png) no-repeat left top;
 	padding-left: 40px;
 }
-ul.personal li.wish a{
-	background: url(../image/+25.png) no-repeat right top;
-	padding-right: 40px
+.wish-count, .cart-count{
+	background: #000;
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 15px;
+	position: relative;
+	top: -2px;
+	text-align: center;
 }
 ul.personal li.cart{
 	background: url(../image/ic_cart.png) no-repeat left top;
 	padding-left: 40px;
-}
-ul.personal li.cart a{
-	background: url(../image/+99.png) no-repeat right top;
-	padding-right: 40px;
 }
 ul.personal a{
 	color: #000;
