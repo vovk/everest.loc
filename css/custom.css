@@ -62,7 +62,6 @@ ul.top-list li a{
 .quick-search-wrapper .form-group input{
 	border-radius: 30px;
 	font-size: 13.95px;
-	font-weight: bold;
 	width: 100%;
 }
 button#quick-search{
@@ -113,7 +112,7 @@ ul.personal li.dropdown{
 ul.personal li.dropdown:hover .dropdown-menu{
 	display: block;
 }
-ul.personal li.dropdown a{
+ul.personal li.dropdown.person a.drop{
 	background: url(../image/arrow-down.png) no-repeat right center;
 	padding-right: 20px;
 }
