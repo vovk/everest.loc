@@ -11,6 +11,16 @@
     src: local('OpenSans-Regular'), /* проверяем наличие шрифта в ОС пользователя */
          url(../fonts/OpenSans-Regular.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
 }
+@font-face {
+    font-family: OpenSans-Bold; /* имя шрифта для CSS правил */
+    src: local('OpenSans-Bold'), /* проверяем наличие шрифта в ОС пользователя */
+         url(../fonts/OpenSans-Bold.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+}
+@font-face {
+    font-family: OpenSans-Light; /* имя шрифта для CSS правил */
+    src: local('OpenSans-Light'), /* проверяем наличие шрифта в ОС пользователя */
+         url(../fonts/OpenSans-Light.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+}
 #top{
 	background-color: #f7f7f7;
 	padding: 10px;
@@ -109,7 +119,10 @@ ul.personal li.dropdown{
 	background: url(../image/ic_account.png) no-repeat left top;
 	padding-left: 40px;
 }
-ul.personal li.dropdown:hover .dropdown-menu{
+/*ul.personal li.dropdown:hover .dropdown-menu{
+	display: block;
+}*/
+ul li.dropdown:hover .dropdown-menu{
 	display: block;
 }
 ul.personal li.dropdown.person a.drop{
@@ -151,3 +164,136 @@ div.dropdown-menu{
 div.dropdown-menu ul a{
 	font-size: 13px;
 }
+#navigation{
+	border: none;
+	background-color: #f7f7f7;
+}
+ul.main-nav{
+	width: 100%;
+}
+ul.main-nav li{
+	margin-right: 5.6%;
+}
+ul.main-nav li:last-child{
+	margin-right: 0;
+}
+#navigation ul.main-nav>li>a{
+	color: #000;
+	font-family: OpenSans-Regular;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+div.sub-main-nav{
+	border: none;
+	background-color: #f7f7f7;
+	box-shadow: none;
+	left: 0;
+	padding: 10px;
+	width: 225px;
+}
+div.sub-main-nav ul>li{
+	padding: 10px 15px;
+}
+div.sub-main-nav ul>li>a{
+	color: #000;
+	font-family: OpenSans-Regular;
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: normal;
+}
+div.sub-main-nav ul>li:hover{
+	background: url(../image/ic_arrow_drop_down.png) no-repeat 5px center;
+}
+.categories{
+	height: 500px;
+	margin: 0 10px;
+	cursor: pointer;
+}
+.bedroom{
+	background: url(../image/bedroom.jpg) no-repeat left top;
+}
+.kitchens{
+	background: url(../image/kitchens.jpg) no-repeat left top;
+}
+.playroom{
+	background: url(../image/playroom.jpg) no-repeat left top;
+}
+.categories .description{
+	color: #fff;
+	font-family: OpenSans-Bold;
+	font-size: 32px;
+	position: absolute;
+	bottom: 35px;
+	left: 75px;
+}
+.categories .description span{
+	font-family: OpenSans-Regular;
+	font-size: 16px;
+	font-weight: normal;
+}
+/*slider 1*/
+.slider-content{
+	margin-bottom: 100px;
+}
+.slider-content .col-md-12{
+	padding: 0;
+}
+.transparent-block, .information-block{
+	float: left;
+	min-height: 423px;
+}
+.transparent-block{
+	position: relative;
+	width: 40%;
+}
+.transparent-block img{
+    position: absolute;
+    right: -75px;
+    top: 16%;
+    /*width: 40%;*/
+}
+.information-block{
+	background: #f7f7f7;
+    padding: 100px 200px 66px 200px;
+	width: 60%;
+	overflow: hidden;
+}
+.information-block div{
+	overflow: hidden;
+}
+.title{
+	color: #000;
+	font-size: 32px;
+	font-family: OpenSans-Bold;
+	text-transform: uppercase;
+}
+.description-block{
+	color: #000;
+	font-size: 16px;
+	font-family: OpenSans-Light;
+	margin: 25px 0;
+}
+.cost{
+	color: #000;
+	font-size: 32px;
+	font-family: OpenSans-Regular;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+}
+.show-product a{
+    background-color: #000;
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px 0;
+    display: block;
+    width: 175px;
+    text-align: center;
+    text-decoration: none!important;
+}
+.show-product a:hover{
+	color: #fff;
+}
+/*slider 1*/
