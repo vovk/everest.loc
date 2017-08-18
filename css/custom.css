@@ -235,6 +235,19 @@ div.sub-main-nav ul>li:hover{
 	font-weight: normal;
 }
 /*slider 1*/
+div.carousel-inner{
+	padding-bottom: 35px;
+}
+a.left, a.right{
+	display: block;
+	background: #000;
+	border-radius: 50%;
+	line-height: 37px;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	opacity: 1;
+}
 .slider-content{
 	margin-bottom: 100px;
 }
