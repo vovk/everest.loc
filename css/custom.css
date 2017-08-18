@@ -83,6 +83,7 @@ button#quick-search{
 	position: absolute;
 	right: 25px;
 	top: 1px;
+	z-index: 2;
 }
 button#quick-search i{
 	font-size: 30px;
@@ -119,9 +120,7 @@ ul.personal li.dropdown{
 	background: url(../image/ic_account.png) no-repeat left top;
 	padding-left: 40px;
 }
-/*ul.personal li.dropdown:hover .dropdown-menu{
-	display: block;
-}*/
+/*общий случай*/
 ul li.dropdown:hover .dropdown-menu{
 	display: block;
 }
@@ -177,6 +176,9 @@ ul.main-nav li{
 ul.main-nav li:last-child{
 	margin-right: 0;
 }
+ul.main-nav li.dropdown:hover{
+	border-top: 2px solid #000;
+}
 #navigation ul.main-nav>li>a{
 	color: #000;
 	font-family: OpenSans-Regular;
@@ -208,18 +210,8 @@ div.sub-main-nav ul>li:hover{
 	background: url(../image/ic_arrow_drop_down.png) no-repeat 5px center;
 }
 .categories{
-	height: 500px;
-	margin: 0 10px;
+	/*margin: 0 10px;*/
 	cursor: pointer;
-}
-.bedroom{
-	background: url(../image/bedroom.jpg) no-repeat left top;
-}
-.kitchens{
-	background: url(../image/kitchens.jpg) no-repeat left top;
-}
-.playroom{
-	background: url(../image/playroom.jpg) no-repeat left top;
 }
 .categories .description{
 	color: #fff;
@@ -235,23 +227,53 @@ div.sub-main-nav ul>li:hover{
 	font-weight: normal;
 }
 /*slider 1*/
+#myCarousel div.arrows-wrapper{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 100px;
+}
+#myCarousel .arrows{
+	z-index: 10;
+}	
+#myCarousel .arrows .direction{
+	float: left;
+	width: 50%;
+}
+#myCarousel .arrows .direction-left{
+	padding-left: 15px;
+}
+#myCarousel .arrows .direction-right{
+	padding-right: 15px;
+}
+#myCarousel .arrows .direction-right a{
+	float: right;
+}
 div.carousel-inner{
 	padding-bottom: 35px;
 }
-a.left, a.right{
-	display: block;
-	background: #000;
+a.left.carousel-control, a.right.carousel-control{
+	background-image: unset;
 	border-radius: 50%;
+	display: block;
 	line-height: 37px;
 	height: 40px;
 	width: 40px;
 	text-align: center;
 	opacity: 1;
+	position: static;
+}
+a.left.carousel-control{
+	background: #000;
+}
+a.right.carousel-control{
+	background: #fff;
+	border: 1px solid #000;
 }
 .slider-content{
 	margin-bottom: 100px;
 }
-.slider-content .col-md-12{
+.slider-content .item-content{
 	padding: 0;
 }
 .transparent-block, .information-block{
@@ -266,7 +288,6 @@ a.left, a.right{
     position: absolute;
     right: -75px;
     top: 16%;
-    /*width: 40%;*/
 }
 .information-block{
 	background: #f7f7f7;

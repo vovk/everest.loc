@@ -80,7 +80,20 @@
 			</div>
 			<div class="navbar-content">
 				<ul class="nav navbar-nav main-nav">
-					<li><a href="#">Гостиные</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Гостиные</a>
+						<div class="dropdown-menu sub-main-nav">
+			    			<div class="dropdown-inner">
+								<ul>
+									<li><a href="#">Модульная мебель для гостиной</a></li>
+									<li><a href="#">Комоды для гостиной</a></li>
+									<li><a href="#">Шкафы и пеналы для гостиной</a></li>
+									<li><a href="#">Журнальные столики</a></li>
+									<li><a href="#">Полки и тумбы</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Детские</a>
 						<div class="dropdown-menu sub-main-nav">
@@ -95,11 +108,76 @@
 							</div>
 						</div>
 					</li>
-					<li><a href="#">Спальни</a></li>
-					<li><a href="#">Шкафы-купе</a></li>
-					<li><a href="#">Прихожие</a></li>
-					<li><a href="#">Кухни</a></li>
-					<li><a href="#">Столы и стулья</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Спальни</a>
+						<div class="dropdown-menu sub-main-nav">
+			    			<div class="dropdown-inner">
+								<ul>
+									<li><a href="#">Кровати</a></li>
+									<li><a href="#">Матрасы</a></li>
+									<li><a href="#">Комоды для спальни</a></li>
+									<li><a href="#">Туалетные столики и трюмо</a></li>
+									<li><a href="#">Шкафы для спальни</a></li>
+									<li><a href="#">Готовые спальные гарнитуры</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Шкафы-купе</a>
+						<div class="dropdown-menu sub-main-nav">
+			    			<div class="dropdown-inner">
+								<ul>
+									<li><a href="#">Шкаф-купе на 2 двери</a></li>
+									<li><a href="#">Шкаф-купе на 3 двери</a></li>
+									<li><a href="#">Шкаф-купе на 4 двери</a></li>
+									<li><a href="#">Угловой шкаф-купе</a></li>
+									<li><a href="#">Угловой шкаф-купе с распашной дверью</a></li>
+									<li><a href="#">Пенали</a></li>
+									<li><a href="#">Консоли</a></li>
+									<li><a href="#">Шкаф-TV</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Прихожие</a>
+						<div class="dropdown-menu sub-main-nav">
+			    			<div class="dropdown-inner">
+								<ul>
+									<li><a href="#">Модульная мебель для прихожей</a></li>
+									<li><a href="#">Шкафы для прихожей</a></li>
+									<li><a href="#">Тумбы для прихожей</a></li>
+									<li><a href="#">Готовые комплекты и мебели для прихожей</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Кухни</a>
+						<div class="dropdown-menu sub-main-nav">
+			    			<div class="dropdown-inner">
+								<ul>
+									<li><a href="#">Модульная мебель для кухни</a></li>
+									<li><a href="#">Готовые кухонные гарнитуры</a></li>
+									<li><a href="#">Обеденные столы и стулья</a></li>
+									<li><a href="#">Шкафы кухонные</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Столы и стулья</a>
+						<div class="dropdown-menu sub-main-nav">
+			    			<div class="dropdown-inner">
+								<ul>
+									<li><a href="#">Комплекты стол и стул</a></li>
+									<li><a href="#">Столы</a></li>
+									<li><a href="#">Стулья</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -107,9 +185,17 @@
 	<div class="container-fluid slider-content">
 		<div class="row">
 			<div id="myCarousel" class="carousel slide">
+				<div class="container arrows-wrapper">
+					<div class="row">
+						<div class="col-md-12 arrows">
+							<div class="direction direction-left"><a class="left carousel-control" href="#myCarousel" data-slide="prev"><img src="../image/ic_arrow-left.png" alt="left"></a></div>
+          					<div class="direction direction-right"><a class="right carousel-control" href="#myCarousel" data-slide="next"><img src="../image/ic_arrow-right.png" alt="right"></a></div>
+						</div>
+					</div>
+				</div>
 				<div class="carousel-inner">
 					<div class="item active">
-						<div class="col-md-12">
+						<div class="col-md-12 item-content">
 							<div class="transparent-block">
 								<img src="image/cheir.png" alt="product">
 							</div>
@@ -130,7 +216,7 @@
 						</div>
 					</div>
 					<div class="item">
-						<div class="col-md-12">
+						<div class="col-md-12 item-content">
 							<div class="transparent-block">
 								<img src="image/cheir.png" alt="product">
 							</div>
@@ -151,7 +237,7 @@
 						</div>
 					</div>
 					<div class="item">
-						<div class="col-md-12">
+						<div class="col-md-12 item-content">
 							<div class="transparent-block">
 								<img src="image/cheir.png" alt="product">
 							</div>
@@ -172,12 +258,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="carousel-controls">
-	              	<!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev"><img src="../image/ic_arrow-left.png" alt="left"></a> -->
-              		<!-- <a class="right carousel-control" href="#myCarousel" data-slide="next"><img src="../image/ic_arrow-right.png" alt="right"></a> -->
-              		<a class="left carousel-control" href="#myCarousel" data-slide="prev"></a>
-              		<a class="right carousel-control" href="#myCarousel" data-slide="next"></a>
-                </div>
 			</div>
 		</div>
 	</div>
@@ -185,6 +265,7 @@
 		<div class="row">
 			<div class="col-md-4">
 				<div class="categories bedroom">
+					<img src="image/bedroom.jpg" alt="bedroom" class="img-responsive">
 					<p class="description">
 						<span>205 товаров</span><br>
 						Спальня
@@ -193,6 +274,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="categories kitchens">
+					<img src="image/kitchens.jpg" alt="kitchens" class="img-responsive">
 					<p class="description">
 						<span>118 товаров</span><br>
 						Кухня
@@ -201,6 +283,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="categories playroom">
+					<img src="image/playroom.jpg" alt="playroom" class="img-responsive">
 					<p class="description">
 						<span>94 товара</span><br>
 						Детская
