@@ -227,26 +227,26 @@ div.sub-main-nav ul>li:hover{
 	font-weight: normal;
 }
 /*slider 1*/
-#myCarousel div.arrows-wrapper{
+#productSlider div.arrows-wrapper{
 	position: absolute;
 	left: 0;
 	right: 0;
 	top: 100px;
 }
-#myCarousel .arrows{
+#productSlider .arrows{
 	z-index: 10;
 }	
-#myCarousel .arrows .direction{
+#productSlider .arrows .direction{
 	float: left;
 	width: 50%;
 }
-#myCarousel .arrows .direction-left{
+#productSlider .arrows .direction-left{
 	padding-left: 15px;
 }
-#myCarousel .arrows .direction-right{
+#productSlider .arrows .direction-right{
 	padding-right: 15px;
 }
-#myCarousel .arrows .direction-right a{
+#productSlider .arrows .direction-right a{
 	float: right;
 }
 div.carousel-inner{
@@ -330,4 +330,78 @@ a.right.carousel-control{
 .show-product a:hover{
 	color: #fff;
 }
-/*slider 1*/
+/*/slider 1*/
+.categories-content{
+	margin-bottom: 100px;
+}
+/*Popularity*/
+div.popularity-wrapper{
+	background: #f7f7f7;
+	padding: 30px 60px;
+}
+div.popularity, div.descr{
+	padding: 0;
+}
+.page-count{
+	display: block;
+	font-family: OpenSans-Light;
+	margin-top: 10px;
+}
+div.descr{
+	padding-top: 30px;
+}
+.product-thumb{
+	overflow: hidden;
+}
+.product-thumb, .product-thumb .image, .product-thumb .caption{
+	background: #fff;
+}
+.product-thumb .image{
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	min-height: 155px;
+}
+.product-thumb .image img{
+	vertical-align: middle;
+	margin: 0 auto;
+}
+.product-thumb .caption{
+	text-align: center;
+}
+.product-thumb .caption h4.product-name a{
+	color: #000;
+	font-family: OpenSans-Bold;
+	font-size: 16px;
+	text-decoration: none;
+}
+.product-thumb .caption p{
+	line-height: 1;
+	text-align: left;
+	padding: 0 19%;
+}
+.item-name{
+	color: #000;
+	font-family: OpenSans-Light;
+	font-size: 14px;
+	float: left;
+	min-width: 65px;
+	margin-right: 25px;
+}
+.item-value{
+	color: #000;
+	font-family: OpenSans-Light;
+	font-size: 14px;
+	display: table;
+	float: left;
+}
+.popular-block{
+	background: #fff;
+	margin: 0px auto;
+	width: 175px;
+}
+.popular-block a{
+	margin-bottom: 10px;
+}
+/*/Popularity*/
