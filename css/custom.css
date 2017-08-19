@@ -226,6 +226,10 @@ div.sub-main-nav ul>li:hover{
 	font-size: 16px;
 	font-weight: normal;
 }
+.owl-carousel .owl-item{
+	width: auto!important;
+	float: none!important;
+}
 /*slider 1*/
 #productSlider div.arrows-wrapper{
 	position: absolute;
@@ -266,9 +270,26 @@ a.left.carousel-control, a.right.carousel-control{
 a.left.carousel-control{
 	background: #000;
 }
+a.left.carousel-control.left-black, /*белый фон, черная стрелка*/
 a.right.carousel-control{
 	background: #fff;
 	border: 1px solid #000;
+}
+a.right.carousel-control{
+	display: block;
+	background: url(../image/ic_arrow-right.png) no-repeat center center;
+}
+a.right.carousel-control:hover{
+	background: url(../image/ic_arrow-right.png) no-repeat center center;
+	background-color: #000;
+}
+a.left.carousel-control.left-black{
+	display: block;
+	background: url(../image/ic_arrow-left-black.png) no-repeat center center;
+}
+a.left.carousel-control.left-black:hover{
+	background: url(../image/ic_arrow-left.png) no-repeat center center;
+	background-color: #000;
 }
 .slider-content{
 	margin-bottom: 100px;
@@ -350,6 +371,19 @@ div.popularity, div.descr{
 div.descr{
 	padding-top: 30px;
 }
+#catalogSlider>.container{
+	position: relative;
+}
+#catalogSlider div.arrows{
+	position: absolute;
+	top: 125px;
+	left: 15px;
+	z-index: 10;
+}
+#catalogSlider div.arrows .direction{
+	float: left;
+	width: 100px;
+}
 .product-thumb{
 	overflow: hidden;
 }
@@ -387,7 +421,7 @@ div.descr{
 	font-size: 14px;
 	float: left;
 	min-width: 65px;
-	margin-right: 25px;
+	margin-right: 21px;
 }
 .item-value{
 	color: #000;
@@ -398,10 +432,72 @@ div.descr{
 }
 .popular-block{
 	background: #fff;
-	margin: 0px auto;
+	margin: 30px auto;
 	width: 175px;
 }
 .popular-block a{
 	margin-bottom: 10px;
 }
+.price .item-value{
+	font-family: OpenSans-Bold;
+}
 /*/Popularity*/
+footer{
+	background: #272727;
+	padding: 40px;
+}
+footer h5{
+	color: #fff;
+	font-family: OpenSans-Bold;
+	font-size: 16px;
+	margin: 0;
+}
+.footer-nav{
+	margin-top: 25px;
+}
+.footer-nav li{
+	margin: 20px 0; 
+}
+.footer-nav li a{
+	color: #fff;
+	font-family: OpenSans-Regular;
+	font-size: 16px;
+	text-decoration: none;
+}
+ul.footer-nav.numbers{
+	margin-bottom: 15px!important;
+}
+.footer-nav.numbers li{
+	margin: 0;
+	text-align: left;
+}
+div.last-block{
+	border-left: 2px solid #fff;
+	margin-left: 10%;
+	padding-left: 10%;
+}
+.wrapper-catalog{
+	margin: 0 auto;
+	width: 1000px;
+	overflow: hidden;
+	padding: 155px 0;
+}
+.wrapper-catalog .half{
+	float: left;
+	position: relative;
+}
+.wrapper-catalog .half img:nth-of-type(1){
+	z-index: 5;
+}
+.wrapper-catalog .half img:nth-of-type(2){
+	position: absolute;
+	bottom: -40px;
+	left: 50px;
+	z-index: -1;
+}
+p.catalog-description{
+	color: #000;
+	font-size: 16px;
+	font-family: OpenSans-Light;
+	margin: 60px 0;
+}

@@ -7,6 +7,12 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- OwlCarousel 2.2 -->
+	<link rel="stylesheet" href="dist/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css">
+	<!-- <link rel="stylesheet" href="dist/OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css"> -->
+	<!-- OwlCarousel 2.2 -->
+	
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- Latest compiled JavaScript -->
@@ -188,8 +194,10 @@
 				<div class="container arrows-wrapper">
 					<div class="row">
 						<div class="col-md-12 arrows">
-							<div class="direction direction-left"><a class="left carousel-control" href="#productSlider" data-slide="prev"><img src="../image/ic_arrow-left.png" alt="left"></a></div>
-          					<div class="direction direction-right"><a class="right carousel-control" href="#productSlider" data-slide="next"><img src="../image/ic_arrow-right.png" alt="right"></a></div>
+							<div class="direction direction-left">
+          						<a class="left carousel-control left-black" href="#productSlider" data-slide="prev"></a>
+          					</div>
+          					<div class="direction direction-right"><a class="right carousel-control" href="#productSlider" data-slide="next"></a></div>
 						</div>
 					</div>
 				</div>
@@ -263,160 +271,306 @@
 	</div>
 	<div class="container categories-content">
 		<div class="row">
-			<div class="col-md-4 col-sm-12">
-				<div class="categories bedroom">
-					<img src="image/bedroom.jpg" alt="bedroom" class="img-responsive">
-					<p class="description">
-						<span>205 товаров</span><br>
-						Спальня
-					</p>
+			<div class="owl-carousel">
+				<div class="col-md-4 col-sm-12">
+					<div class="categories bedroom">
+						<img src="image/bedroom.jpg" alt="bedroom" class="img-responsive">
+						<p class="description">
+							<span>205 товаров</span><br>
+							Спальня
+						</p>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-4 col-sm-12">
-				<div class="categories kitchens">
-					<img src="image/kitchens.jpg" alt="kitchens" class="img-responsive">
-					<p class="description">
-						<span>118 товаров</span><br>
-						Кухня
-					</p>
+				<div class="col-md-4 col-sm-12">
+					<div class="categories kitchens">
+						<img src="image/kitchens.jpg" alt="kitchens" class="img-responsive">
+						<p class="description">
+							<span>118 товаров</span><br>
+							Кухня
+						</p>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-4 col-sm-12">
-				<div class="categories playroom">
-					<img src="image/playroom.jpg" alt="playroom" class="img-responsive">
-					<p class="description">
-						<span>94 товара</span><br>
-						Детская
-					</p>
+				<div class="col-md-4 col-sm-12">
+					<div class="categories playroom">
+						<img src="image/playroom.jpg" alt="playroom" class="img-responsive">
+						<p class="description">
+							<span>94 товара</span><br>
+							Детская
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="container-fluid popularity-wrapper">
 		<div class="row">
-			<div class="container">
-				<div class="col-md-12 popularity">
-					<div class="col-md-3 col-sm-3 descr">
-						<div class="title">
-							Популярное
-						</div>
-						<span class="page-count">1 из 6 страниц</span>
+			<div id="catalogSlider" class="carousel slide">
+				<div class="container">
+					<div class="arrows">
+						<div class="direction direction-left">
+      						<a class="left carousel-control left-black" href="#catalogSlider" data-slide="prev"></a>
+      					</div>
+	  					<div class="direction direction-right"><a class="right carousel-control" href="#catalogSlider" data-slide="next"></a></div>
 					</div>
-					<div class="col-md-9 col-sm-9">
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="product-thumb transition">
-								<div class="image">
-									<a href="#">
-										<img src="image/product.png" alt="product" title="product" class="img-responsive">
-									</a>
+					<div class="carousel-inner">
+						<div class="item active">
+							<div class="col-md-12 popularity">
+								<div class="col-md-3 col-sm-3 descr">
+									<div class="title">
+										Популярное
+									</div>
+									<span class="page-count">1 страницы из 6</span>
+									
 								</div>
-								<div class="caption">
-									<h4 class="product-name"><a href="#">Стул детский Belle</a></h4>
-									<p class="clearfix">
-										<span class="item-name">
-											Материал
-										</span>
-										<span class="item-value">
-											Дерево,<br> пластик
-										</span>
-									</p>
-									<p class="clearfix">
-										<span class="item-name">
-											Цвет
-										</span>
-										<span class="item-value">
-											Белый
-										</span>
-									</p>
-									<p class="price clearfix">
-										<span class="item-name">
-											Цена
-										</span>
-										<span class="item-value">
-											831 грн.
-										</span>
-									</p>
-								</div>
-								<div class="show-product popular-block">
-									<a href="#">Просмотреть</a>
+								<div class="col-md-9 col-sm-9">
+									<div class="col-md-4 col-sm-6 col-xs-12">
+										<div class="product-thumb transition">
+											<div class="image">
+												<a href="#">
+													<img src="image/product.png" alt="product" title="product" class="img-responsive">
+												</a>
+											</div>
+											<div class="caption">
+												<h4 class="product-name"><a href="#">Стул детский Belle</a></h4>
+												<p class="clearfix">
+													<span class="item-name">
+														Материал
+													</span>
+													<span class="item-value">
+														Дерево,<br> пластик
+													</span>
+												</p>
+												<p class="clearfix">
+													<span class="item-name">
+														Цвет
+													</span>
+													<span class="item-value">
+														Белый
+													</span>
+												</p>
+												<p class="price clearfix">
+													<span class="item-name">
+														Цена
+													</span>
+													<span class="item-value">
+														831 грн.
+													</span>
+												</p>
+											</div>
+											<div class="show-product popular-block">
+												<a href="#">Купить</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-6 col-xs-12">
+										<div class="product-thumb transition">
+											<div class="image">
+												<a href="#">
+													<img src="image/product2.png" alt="product" title="product2" class="img-responsive">
+												</a>
+											</div>
+											<div class="caption">
+												<h4 class="product-name"><a href="#">Стул детский Belle</a></h4>
+												<p class="clearfix">
+													<span class="item-name">
+														Материал
+													</span>
+													<span class="item-value">
+														Дерево,<br> пластик
+													</span>
+												</p>
+												<p class="clearfix">
+													<span class="item-name">
+														Цвет
+													</span>
+													<span class="item-value">
+														Белый
+													</span>
+												</p>
+												<p class="price clearfix">
+													<span class="item-name">
+														Цена
+													</span>
+													<span class="item-value">
+														831 грн.
+													</span>
+												</p>
+											</div>
+											<div class="show-product popular-block">
+												<a href="#">Купить</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-6 col-xs-12">
+										<div class="product-thumb transition">
+											<div class="image">
+												<a href="#">
+													<img src="image/product3.png" alt="product" title="product3" class="img-responsive">
+												</a>
+											</div>
+											<div class="caption">
+												<h4 class="product-name"><a href="#">Стул детский Belle</a></h4>
+												<p class="clearfix">
+													<span class="item-name">
+														Материал
+													</span>
+													<span class="item-value">
+														Дерево,<br> пластик
+													</span>
+												</p>
+												<p class="clearfix">
+													<span class="item-name">
+														Цвет
+													</span>
+													<span class="item-value">
+														Белый
+													</span>
+												</p>
+												<p class="price clearfix">
+													<span class="item-name">
+														Цена
+													</span>
+													<span class="item-value">
+														3802 грн.
+													</span>
+												</p>
+											</div>
+											<div class="show-product popular-block">
+												<a href="#">Купить</a>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="product-thumb transition">
-								<div class="image">
-									<a href="#">
-										<img src="image/product2.png" alt="product" title="product2" class="img-responsive">
-									</a>
+
+						<div class="item">
+							<div class="col-md-12 popularity">
+								<div class="col-md-3 col-sm-3 descr">
+									<div class="title">
+										Популярное
+									</div>
+									<span class="page-count">2 страницы из 6</span>
+									
 								</div>
-								<div class="caption">
-									<h4 class="product-name"><a href="#">Стул детский Belle</a></h4>
-									<p class="clearfix">
-										<span class="item-name">
-											Материал
-										</span>
-										<span class="item-value">
-											Дерево,<br> пластик
-										</span>
-									</p>
-									<p class="clearfix">
-										<span class="item-name">
-											Цвет
-										</span>
-										<span class="item-value">
-											Белый
-										</span>
-									</p>
-									<p class="price clearfix">
-										<span class="item-name">
-											Цена
-										</span>
-										<span class="item-value">
-											831 грн.
-										</span>
-									</p>
-								</div>
-								<div class="show-product popular-block">
-									<a href="#">Просмотреть</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="product-thumb transition">
-								<div class="image">
-									<a href="#">
-										<img src="image/product3.png" alt="product" title="product3" class="img-responsive">
-									</a>
-								</div>
-								<div class="caption">
-									<h4 class="product-name"><a href="#">Стул детский Belle</a></h4>
-									<p class="clearfix">
-										<span class="item-name">
-											Материал
-										</span>
-										<span class="item-value">
-											Дерево,<br> пластик
-										</span>
-									</p>
-									<p class="clearfix">
-										<span class="item-name">
-											Цвет
-										</span>
-										<span class="item-value">
-											Белый
-										</span>
-									</p>
-									<p class="price clearfix">
-										<span class="item-name">
-											Цена
-										</span>
-										<span class="item-value">
-											831 грн.
-										</span>
-									</p>
-								</div>
-								<div class="show-product popular-block">
-									<a href="#">Просмотреть</a>
+								<div class="col-md-9 col-sm-9">
+									<div class="col-md-4 col-sm-6 col-xs-12">
+										<div class="product-thumb transition">
+											<div class="image">
+												<a href="#">
+													<img src="image/product.png" alt="product" title="product" class="img-responsive">
+												</a>
+											</div>
+											<div class="caption">
+												<h4 class="product-name"><a href="#">Стул детский Belle</a></h4>
+												<p class="clearfix">
+													<span class="item-name">
+														Материал
+													</span>
+													<span class="item-value">
+														Дерево,<br> пластик
+													</span>
+												</p>
+												<p class="clearfix">
+													<span class="item-name">
+														Цвет
+													</span>
+													<span class="item-value">
+														Белый
+													</span>
+												</p>
+												<p class="price clearfix">
+													<span class="item-name">
+														Цена
+													</span>
+													<span class="item-value">
+														831 грн.
+													</span>
+												</p>
+											</div>
+											<div class="show-product popular-block">
+												<a href="#">Купить</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-6 col-xs-12">
+										<div class="product-thumb transition">
+											<div class="image">
+												<a href="#">
+													<img src="image/product2.png" alt="product" title="product2" class="img-responsive">
+												</a>
+											</div>
+											<div class="caption">
+												<h4 class="product-name"><a href="#">Стул детский Belle</a></h4>
+												<p class="clearfix">
+													<span class="item-name">
+														Материал
+													</span>
+													<span class="item-value">
+														Дерево,<br> пластик
+													</span>
+												</p>
+												<p class="clearfix">
+													<span class="item-name">
+														Цвет
+													</span>
+													<span class="item-value">
+														Белый
+													</span>
+												</p>
+												<p class="price clearfix">
+													<span class="item-name">
+														Цена
+													</span>
+													<span class="item-value">
+														831 грн.
+													</span>
+												</p>
+											</div>
+											<div class="show-product popular-block">
+												<a href="#">Купить</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-6 col-xs-12">
+										<div class="product-thumb transition">
+											<div class="image">
+												<a href="#">
+													<img src="image/product3.png" alt="product" title="product3" class="img-responsive">
+												</a>
+											</div>
+											<div class="caption">
+												<h4 class="product-name"><a href="#">Стул детский Belle</a></h4>
+												<p class="clearfix">
+													<span class="item-name">
+														Материал
+													</span>
+													<span class="item-value">
+														Дерево,<br> пластик
+													</span>
+												</p>
+												<p class="clearfix">
+													<span class="item-name">
+														Цвет
+													</span>
+													<span class="item-value">
+														Белый
+													</span>
+												</p>
+												<p class="price clearfix">
+													<span class="item-name">
+														Цена
+													</span>
+													<span class="item-value">
+														3802 грн.
+													</span>
+												</p>
+											</div>
+											<div class="show-product popular-block">
+												<a href="#">Купить</a>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -425,5 +579,75 @@
 			</div>
 		</div>
 	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 catalog">
+				<div class="wrapper-catalog">
+					<div class="half">
+						<img src="image/catalog.png" alt="catalog">
+						<img src="image/pattern.png" alt="pattern">
+					</div>
+					<div class="half">
+						<div class="title">
+							Каталог 2017
+						</div>
+						<p class="catalog-description">Cмотрите полный каталог мебели<br> и наслаждайтесь просмотром<br> новой летней коллекции. <br> Вдохновляйтесь готовыми<br> дизайнерскими идеями.</p>
+						<div class="show-product">
+							<a href="#">Просмотреть</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-sm-2">
+					<h5>Личный кабинет</h5>
+					<ul class="list-unstyled footer-nav">
+						<li><a href="#">Список желаний</a></li>
+						<li><a href="#">История заказов</a></li>
+						<li><a href="#">Рассылка</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 col-sm-2">
+					<h5>Информация</h5>
+					<ul class="list-unstyled footer-nav">
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Оплата и доставка</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 col-sm-2">
+					<h5>Дополнительно</h5>
+					<ul class="list-unstyled footer-nav">
+						<li><a href="#">Связаться с нами</a></li>
+						<li><a href="#">Производители</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Возврат товара</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-sm-4 last-block">
+					<h5>Контакты:</h5>
+					<ul class="list-unstyled footer-nav numbers">
+						<li><a href="#">(098) 296-96-50</a></li>
+						<li><a href="#">(099) 296-96-50</a></li>
+						<li><a href="#">(093) 296-96-50</a></li>
+					</ul>
+					<h5>Адрес:</h5>
+					<ul class="list-unstyled footer-nav">
+						<li><a href="#">Украина, 69114, г. Запорожье,<br>пр. Соборный, 14б</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="dist/OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $(".owl-carousel").owlCarousel();
+		});
+	</script>
 </body>
 </html>
