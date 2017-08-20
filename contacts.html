@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- OwlCarousel 2.2 -->
+	<link rel="stylesheet" href="dist/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css">
+	<!-- <link rel="stylesheet" href="dist/OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css"> -->
+	<!-- OwlCarousel 2.2 -->
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+	<title>Everest</title>
+</head>
+<body>
+	<nav id="top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="col-md-6">
+						<ul class="top-list">
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Оплата и доставка</a></li>
+							<li><a href="#">Условия и положения</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<div class="numbers">
+							<p>(098) 296-96-50</p>
+							<p>(098) 296-96-50</p>
+							<p>(098) 296-96-50</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="col-md-2 logo">
+						<a href="index.html"><img src="image/logo.png" alt="logo" class="img-responsive"></a>
+					</div>
+					<div class="col-md-4 quick-search-wrapper">
+						<form class="form-inline quick-search-form" role="form" action="#">
+							<div class="form-group">
+								<input type="text" class="form-control search" placeholder="Поиск по сайту">
+							</div>
+							<button type="submit" id="quick-search" class="btn btn-custom">
+								<i class="material-icons">&#xE8B6;</i>
+							</button>
+						</form>
+				    </div>
+				    <div class="col-md-6 icons">
+				    	<ul class="personal">
+				    		<li class="dropdown person"><a href="#" class="dropdown-toggle drop" data-toggle="dropdown">Личный кабинет</a>
+					    		<div class="dropdown-menu">
+					    			<div class="dropdown-inner">
+					    				<ul>
+					    					<li><a href="#" data-toggle="modal" data-target="#autorizationModal">Войти</a></li>
+					    					<li><a href="#" data-toggle="modal" data-target="#registrationModal">Зарегистрироваться</a></li>
+					    				</ul>
+					    			</div>
+					    		</div>
+				    		</li>
+				    		<li class="wish"><a href="#">Желания<span class="img-circle wish-count">+25</span></a></li>
+				    		<li class="cart"><a href="#">Корзина<span class="img-circle cart-count">+99</span></a></li>
+				    	</ul>
+				    	<!-- Modal autorization -->
+						<div id="autorizationModal" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+								<div class="half">
+									<img src="../image/finished-kitchenware/02_modern/img_1.png" alt="autorization" class="img-responsive">
+								</div>
+								<div class="half">
+									<!-- Modal content-->
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Вход</h4>
+										</div>
+										<div class="modal-body">
+											<div class="modal-body-wrapper">
+												<label for="email">Введите Ваш email</label>
+												<input type="text" name="email">
+												<label for="password">Введите Ваш пароль</label>
+												<input type="password" name="password">
+												<a href="#"><span class="pull-right forgot-pass">Забыли пароль?</span></a>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<div class="modal-body-wrapper">
+												<div class="show-product clearfix">
+													<a href="#">Войти</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--/ Modal autorization -->
+				    	<!-- Modal registration -->
+						<div id="registrationModal" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+								<div class="half">
+									<img src="../image/finished-kitchenware/03_barselona/img_53.jpg" alt="reg" class="img-responsive">
+								</div>
+								<div class="half">
+									<!-- Modal content-->
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Регистрация</h4>
+										</div>
+										<div class="modal-body">
+											<div class="modal-body-wrapper">
+												<label for="name">Ваше имя</label>
+												<input type="text" name="name">
+												<label for="mail">Электронная почта</label>
+												<input type="mail" name="mail">
+												<label for="pass">Придумайте пароль</label>
+												<input type="text" name="pass">
+											</div>
+										</div>
+										<div class="modal-footer">
+											<div class="modal-body-wrapper">
+												<div class="show-product clearfix">
+													<a href="#">Регистрация</a>
+												</div>
+												<!-- <div class="clearfix"></div> -->
+												<div class="social">
+													<p>
+														Войти: <span><img src="image/twitter.png" alt="twitter"><img src="image/inst.png" alt="inst"><img src="image/fb.png" alt="fb"></span>		
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--/ Modal registration -->
+				    </div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<nav class="navbar navbar-default" id="navigation">
+		<div class="container">
+			<div class="navbar-header">
+			</div>
+			<div class="navbar-content">
+				<ul class="nav navbar-nav main-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Гостиные</a>
+						<div class="dropdown-menu sub-main-nav">
+			    			<div class="dropdown-inner">
+								<ul>
+									<li><a href="#">Модульная мебель для гостиной</a></li>
+									<li><a href="#">Комоды для гостиной</a></li>
+									<li><a href="#">Шкафы и пеналы для гостиной</a></li>
+									<li><a href="#">Журнальные столики</a></li>
+									<li><a href="#">Полки и тумбы</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Детские</a>
+						<div class="dropdown-menu sub-main-nav">
+			    			<div class="dropdown-inner">
+								<ul>
+									<li><a href="#">Кровати в детские</a></li>
+									<li><a href="#">Матрасы в десткие</a></li>
+									<li><a href="#">Столы в детские</a></li>
+									<li><a href="#">Шкафы в детские</a></li>
+									<li><a href="#">Комоды для детских</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Спальни</a>
+						<div class="dropdown-menu sub-main-nav">
+			    			<div class="dropdown-inner">
+								<ul>
+									<li><a href="#">Кровати</a></li>
+									<li><a href="#">Матрасы</a></li>
+									<li><a href="#">Комоды для спальни</a></li>
+									<li><a href="#">Туалетные столики и трюмо</a></li>
+									<li><a href="#">Шкафы для спальни</a></li>
+									<li><a href="#">Готовые спальные гарнитуры</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Шкафы-купе</a>
+						<div class="dropdown-menu sub-main-nav">
+			    			<div class="dropdown-inner">
+								<ul>
+									<li><a href="#">Шкаф-купе на 2 двери</a></li>
+									<li><a href="#">Шкаф-купе на 3 двери</a></li>
+									<li><a href="#">Шкаф-купе на 4 двери</a></li>
+									<li><a href="#">Угловой шкаф-купе</a></li>
+									<li><a href="#">Угловой шкаф-купе с распашной дверью</a></li>
+									<li><a href="#">Пенали</a></li>
+									<li><a href="#">Консоли</a></li>
+									<li><a href="#">Шкаф-TV</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Прихожие</a>
+						<div class="dropdown-menu sub-main-nav">
+			    			<div class="dropdown-inner">
+								<ul>
+									<li><a href="#">Модульная мебель для прихожей</a></li>
+									<li><a href="#">Шкафы для прихожей</a></li>
+									<li><a href="#">Тумбы для прихожей</a></li>
+									<li><a href="#">Готовые комплекты и мебели для прихожей</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Кухни</a>
+						<div class="dropdown-menu sub-main-nav">
+			    			<div class="dropdown-inner">
+								<ul>
+									<li><a href="#">Модульная мебель для кухни</a></li>
+									<li><a href="#">Готовые кухонные гарнитуры</a></li>
+									<li><a href="#">Обеденные столы и стулья</a></li>
+									<li><a href="#">Шкафы кухонные</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Столы и стулья</a>
+						<div class="dropdown-menu sub-main-nav">
+			    			<div class="dropdown-inner">
+								<ul>
+									<li><a href="#">Комплекты стол и стул</a></li>
+									<li><a href="#">Столы</a></li>
+									<li><a href="#">Стулья</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="container" id="contacts">
+		<div class="row">
+			<div class="col-md-12 title-wrapper">
+				<h2 class="title-page">Контакты</h2>
+			</div>
+			<div class="col-md-12">
+				<div class="information-by-map">
+					<div class="half pull-left">
+						<p class="pull-right">69114, г. Запорожье,<br>пр. Соборный, 14б </p>
+					</div>
+					<div class="half pull-left">
+						<p>Телефон:  (098) 296-96-50<br>e-mail: everestm@gmail.com </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12" style="padding: 0;">
+				<div id="map"></div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-sm-2">
+					<h5>Личный кабинет</h5>
+					<ul class="list-unstyled footer-nav">
+						<li><a href="#">Список желаний</a></li>
+						<li><a href="#">История заказов</a></li>
+						<li><a href="#">Рассылка</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 col-sm-2">
+					<h5>Информация</h5>
+					<ul class="list-unstyled footer-nav">
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Оплата и доставка</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 col-sm-2">
+					<h5>Дополнительно</h5>
+					<ul class="list-unstyled footer-nav">
+						<li><a href="#">Связаться с нами</a></li>
+						<li><a href="#">Производители</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Возврат товара</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-sm-4 last-block">
+					<h5>Контакты:</h5>
+					<ul class="list-unstyled footer-nav numbers">
+						<li><a href="#">(098) 296-96-50</a></li>
+						<li><a href="#">(099) 296-96-50</a></li>
+						<li><a href="#">(093) 296-96-50</a></li>
+					</ul>
+					<h5>Адрес:</h5>
+					<ul class="list-unstyled footer-nav">
+						<li><a href="#">Украина, 69114, г. Запорожье,<br>пр. Соборный, 14б</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="dist/OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script>
+		var map;
+		function initMap() {
+			map = new google.maps.Map(document.getElementById('map'), {
+				center: {lat: 47.809483, lng: 35.185083},
+				zoom: 8
+			});
+		}
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQZq3lWVuUNkAaqvZrtSG4XngYGp6yrW0&callback=initMap"
+    async defer></script>
+</body>
+</html>
