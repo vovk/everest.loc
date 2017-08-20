@@ -413,6 +413,9 @@ div.descr{
 .product-thumb .caption{
 	text-align: center;
 }
+.product-thumb .caption h4.product-name{
+	min-height: 38px;
+}
 .product-thumb .caption h4.product-name a{
 	color: #000;
 	font-family: OpenSans-Bold;
@@ -422,7 +425,7 @@ div.descr{
 .product-thumb .caption p{
 	line-height: 1;
 	text-align: left;
-	padding: 0 19%;
+	padding: 0 10%;
 }
 .item-name{
 	color: #000;
@@ -430,14 +433,21 @@ div.descr{
 	font-size: 14px;
 	float: left;
 	min-width: 65px;
-	margin-right: 21px;
+	min-height: 28px;
+}
+.item-name.etc-items{
+	min-height: 15.5px;
 }
 .item-value{
 	color: #000;
 	font-family: OpenSans-Light;
 	font-size: 14px;
 	display: table;
-	float: left;
+	float: right;
+	min-height: 28px;
+}
+.item-value.etc-items{
+	min-height: 15.5px;
 }
 .popular-block{
 	background: #fff;
@@ -609,7 +619,7 @@ div.title-wrapper::before{
     position: absolute;
     min-width: 416px;
     min-height: 1px;
-    left: 50px;
+    left: 20px;
     top: 35px;
 }
 div.title-wrapper::after{
@@ -619,7 +629,7 @@ div.title-wrapper::after{
     position: absolute;
     min-width: 416px;
     min-height: 1px;
-    right: 50px;
+    right: 20px;
     top: 35px;
 }
 h2.title-page{
@@ -646,3 +656,22 @@ div.information-by-map p{
 div.information-by-map .half{
 	padding: 20px;
 }
+/*wish-list*/
+div.product-wrapper{
+	border: 1px solid #dedede;
+	margin: 50px 0;
+	width: 22%;
+	margin-right: 3%;
+}
+div.product-wrapper:last-child{
+	margin-right: 0;
+}
+div.product-wrapper:hover{
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(224,224,224,1);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(224,224,224,1);
+	box-shadow: 0px 0px 10px 1px rgba(224,224,224,1);
+}
+#wish-list .list{
+	margin-left: 15px;
+}
+/*/wish-list*/
