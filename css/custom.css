@@ -226,12 +226,6 @@ div.sub-main-nav ul>li:hover{
 	font-size: 16px;
 	font-weight: normal;
 }
-/*owl-carousel*/
-.owl-carousel .owl-item{
-	width: auto!important;
-	float: none!important;
-}
-/*/owl-carousel*/
 /*slider 1*/
 #productSlider div.arrows-wrapper{
 	position: absolute;
