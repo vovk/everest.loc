@@ -385,7 +385,8 @@ div.descr{
 }
 #catalogSlider div.arrows{
 	position: absolute;
-	top: 125px;
+	/*top: 125px; удалили - 1 страниц из 6*/
+	top: 100px;
 	left: 15px;
 	z-index: 10;
 }
