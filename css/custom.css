@@ -31,6 +31,10 @@
 header{
 	padding: 35px;
 }
+section.container-fluid{
+	padding: 0;
+	overflow: hidden;
+}
 ul{
 	list-style: none;
 	margin-bottom: 0!important;
@@ -177,6 +181,9 @@ ul.main-nav li:last-child{
 	margin-right: 0;
 }
 ul.main-nav li.dropdown:hover{
+	border-top: 2px solid #000;
+}
+ul.main-nav li.dropdown.active{
 	border-top: 2px solid #000;
 }
 #navigation ul.main-nav>li>a{
@@ -729,7 +736,6 @@ p.icons a span.white{
 	background: #fff;
 	border: 1px solid #000;
 }
-section.container-fluid{
-	padding: 0;
-	overflow: hidden;
+.product-img-text{
+	display: none;
 }
