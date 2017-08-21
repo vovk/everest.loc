@@ -177,6 +177,12 @@ ul.main-nav{
 ul.main-nav li{
 	margin-right: 5.6%;
 }
+@-moz-document url-prefix()
+{
+	ul.main-nav li{
+		margin-right: 5.4%;
+	}
+}
 ul.main-nav li:last-child{
 	margin-right: 0;
 }
@@ -217,16 +223,16 @@ div.sub-main-nav ul>li:hover{
 	background: url(../image/ic_arrow_drop_down.png) no-repeat 5px center;
 }
 .categories{
-	/*margin: 0 10px;*/
 	cursor: pointer;
 }
 .categories .description{
-	color: #fff;
-	font-family: OpenSans-Bold;
-	font-size: 32px;
-	position: absolute;
 	bottom: 35px;
-	left: 75px;
+    color: #fff;
+    font-family: OpenSans-Bold;
+    font-size: 32px;
+    left: 75px;
+    line-height: normal;
+    position: absolute;
 }
 .categories .description span{
 	font-family: OpenSans-Regular;
@@ -332,9 +338,10 @@ a.left.carousel-control.left-black:active{
 }
 .title{
 	color: #000;
-	font-size: 32px;
-	font-family: OpenSans-Bold;
-	text-transform: uppercase;
+    font-family: OpenSans-Bold;
+    font-size: 32px;
+    line-height: normal;
+    text-transform: uppercase;
 }
 .description-block{
 	color: #000;
@@ -392,12 +399,14 @@ div.descr{
 #catalogSlider>.container{
 	position: relative;
 }
-#catalogSlider div.arrows{
+/*#catalogSlider div.arrows{
 	position: absolute;
-	/*top: 125px; удалили - 1 страниц из 6*/
 	top: 100px;
 	left: 15px;
 	z-index: 10;
+}*/
+#catalogSlider .arrows{
+	margin-top: 25px;
 }
 #catalogSlider div.arrows .direction{
 	float: left;
@@ -739,3 +748,69 @@ p.icons a span.white{
 .product-img-text{
 	display: none;
 }
+/*07-product.html*/
+div.breadcrumbs{
+	padding-left: 20px;
+}
+.breadcrumbs span{
+	color: #000;
+	display: inline-block;
+	font-family: OpenSans-Regular;
+	font-size: 12px;
+	margin: 0 10px;
+}
+.full-product h2.title-page{
+	margin-top: 0;
+	text-align: left;
+}
+.full-product h2.title-page ~ p{
+	color: #000;
+	font-size: 16px;
+	font-family: OpenSans-Light;
+}
+.portrait{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 25px;
+}
+.portrait h4{
+	color: #000;
+	font-size: 16px;
+	font-family: OpenSans-Bold;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.portrait p{
+	color: #000;
+	display: inline-block;
+	margin-right: 50px;
+}
+.portrait p span{
+	font-family: OpenSans-Light;
+	font-size: 16px;
+}
+.portrait p span img{
+	margin-right: 25px;
+}
+.portrait p span a{
+	color: #000;
+}
+.full-description div.cost{
+	display: inline-block;
+	margin-top: 15px;
+}
+.full-description div.cost>p{
+	text-transform: none;
+}
+.full-description div.show-product{
+	margin-left: 50px;
+	display: inline-block;
+}
+div.full-product{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 25px;
+	overflow: auto;
+}
+div.full-product:nth-of-type(2),div.full-product:nth-of-type(3){
+	margin-top: 25px;
+}
+/*/07-product.html*/
