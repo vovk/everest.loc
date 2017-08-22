@@ -17,8 +17,6 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-	<script src="dist/OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
-	<script src="js/custom.js"></script>
 	<link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
 	<title>Everest</title>
 </head>
@@ -224,8 +222,8 @@
 							</div>
 						</div>
 					</li>
-					<li class="dropdown active">
-						<a href="bedroom.html" class="dropdown-toggle" data-toggle="">Прихожие</a>
+					<li class="dropdown line">
+						<a href="#" class="dropdown-toggle" data-toggle="">Прихожие</a>
 						<div class="dropdown-menu sub-main-nav">
 			    			<div class="dropdown-inner">
 								<ul>
@@ -269,84 +267,223 @@
 	<section class="container-fluid">
 		<div class="row">
 			<div id="content" class="col-sm-12">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12 bedroom-wrapper">
-							<div class="col-md-3">
-								<div class="product-img">
-									<img src="../image/bedroom/card2.jpg" alt="bedroom" class="img-responsive">
-									<div class="product-img-description">
-										<h4 class="product-name">
-											Спальня Найт BRW
-										</h4>
-										<p class="clearfix">
-											<span class="item-name">
-												Текстура
-											</span>
-											<span class="item-value">
-												Венге Цаво
-											</span>
-										</p>
-										<p class="clearfix">
-											<span class="item-name">
-												Размер<br>под матрас
-											</span>
-											<span class="item-value">
-												2000х1600
-											</span>
-										</p>
-										<p class="price clearfix">
-											<span class="item-value center">
-												3 802 грн.
-											</span>
-										</p>
-										<p class="clearfix icons">
-											<a href="#"><span class="img-circle cart-count eye">
-												<img src="image/ic_view.png" alt="view">
-											</span></a>
-											<a href="#"><span class="img-circle cart-count white">
-												<img src="image/ic_cart2.png" alt="cart">
-											</span></a>
-										</p>
-									</div>
-									<div class="product-img-text">
-										<p>Спальня - это место отдыха после активного дня. <br><br>Поэтому , должна как можно лучше выполнять свою функцию и соответствовать предпочтениям домочадцев, для оптимального комфорта и спокойствия.</p>
-									</div>
+				<div class="container" id="shkaf">
+					<div class="row list">
+						<div class="col-md-12 top-image">
+							<div class="half">
+								<p>Спальня-это место отдыха после активного дня.</p>
+								<br><br>
+								<p>Поэтому , должна как можно лучше выполнять свою функцию и соответствовать предпочтениям домочадцев, для оптимального комфорта и спокойствия.</p>
+							</div>
+							<div class="half">
+								<img src="image/shkaf/big.jpg" alt="shkaf" class="img-responsive">
+							</div>
+						</div>
+						<div class="col-md-12 filter">
+							<h4>Фильтр</h4>
+							<div class="filter-wrapper">
+								<div class="form-group location">
+									<label for="location">Место расположения:</label>
+									<select name="" id="location" class="form-control">
+										<option value="1">Спальня</option>
+										<option value="2">Детская</option>
+									</select>
+								</div>
+								<div class="form-group design">
+									<label for="design">Вид:</label>
+									<select name="" id="design" class="form-control">
+										<option value="1">Шкаф - купе на 2 двери</option>
+										<option value="2">Шкаф - купе на 22 двери</option>
+										<option value="3">Шкаф - купе на 3 двери</option>
+										<option value="4">Шкаф - купе на 1 дверь</option>
+									</select>
+								</div>
+								<div class="form-group price">
+									<label for="price">Цена:</label>
+									<input type="text" class="form-control" data-value="от" value="800">
+								</div>
+								<div class="form-group price">
+									<label for="price"></label>
+									<input type="text" class="form-control" data-value="до" value="11999">
+								</div>
+								<div class="show-product">
+									<button type="button"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Найти</span></button>
 								</div>
 							</div>
-							<div class="col-md-3">
-								<div class="product-img">
-									<img src="../image/bedroom/card2.jpg" alt="bedroom" class="img-responsive">
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 product-wrapper">
+							<div class="product-thumb transition">
+								<div class="image">
+									<a href="#">
+										<img src="image/shkaf/shkaf1.jpg" alt="product" title="product" class="img-responsive">
+									</a>
+								</div>
+								<div class="caption">
+									<h4 class="product-name"><a href="#">Шкаф-купе Бриз</a></h4>
+									<p class="clearfix">
+										<span class="item-name etc-items">
+											Длина
+										</span>
+										<span class="item-value etc-items">
+											2 000 см
+										</span>
+									</p>
+									<p class="clearfix">
+										<span class="item-name etc-items">
+											Ширина
+										</span>
+										<span class="item-value etc-items">
+											1 200 см
+										</span>
+									</p>
+									<p class="clearfix">
+										<span class="item-name etc-items">
+											Высота
+										</span>
+										<span class="item-value etc-items">
+											170 см
+										</span>
+									</p>
+									<p class="price clearfix">
+										<span class="item-name">
+											Цена
+										</span>
+										<span class="item-value">
+											809 грн.
+										</span>
+									</p>
 								</div>
 							</div>
-							<div class="col-md-3">
-								<div class="product-img">
-									<img src="../image/bedroom/card3.jpg" alt="bedroom" class="img-responsive">
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 product-wrapper">
+							<div class="product-thumb transition">
+								<div class="image">
+									<a href="#">
+										<img src="image/shkaf/shkaf2.jpg" alt="product" title="product" class="img-responsive">
+									</a>
+								</div>
+								<div class="caption">
+									<h4 class="product-name"><a href="#">Шкаф-купе с длинным названием</a></h4>
+									<p class="clearfix">
+										<span class="item-name etc-items">
+											Длина
+										</span>
+										<span class="item-value etc-items">
+											2 000 см
+										</span>
+									</p>
+									<p class="clearfix">
+										<span class="item-name etc-items">
+											Ширина
+										</span>
+										<span class="item-value etc-items">
+											1 200 см
+										</span>
+									</p>
+									<p class="clearfix">
+										<span class="item-name etc-items">
+											Высота
+										</span>
+										<span class="item-value etc-items">
+											170 см
+										</span>
+									</p>
+									<p class="price clearfix">
+										<span class="item-name">
+											Цена
+										</span>
+										<span class="item-value">
+											809 грн.
+										</span>
+									</p>
 								</div>
 							</div>
-							<div class="col-md-3">
-								<div class="product-img">
-									<img src="../image/bedroom/card4.jpg" alt="bedroom" class="img-responsive">
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 product-wrapper">
+							<div class="product-thumb transition">
+								<div class="image">
+									<a href="#">
+										<img src="image/shkaf/shkaf3.jpg" alt="product" title="product" class="img-responsive">
+									</a>
+								</div>
+								<div class="caption">
+									<h4 class="product-name"><a href="#">Шкаф-купе Бриз</a></h4>
+									<p class="clearfix">
+										<span class="item-name etc-items">
+											Длина
+										</span>
+										<span class="item-value etc-items">
+											2 000 см
+										</span>
+									</p>
+									<p class="clearfix">
+										<span class="item-name etc-items">
+											Ширина
+										</span>
+										<span class="item-value etc-items">
+											1 200 см
+										</span>
+									</p>
+									<p class="clearfix">
+										<span class="item-name etc-items">
+											Высота
+										</span>
+										<span class="item-value etc-items">
+											170 см
+										</span>
+									</p>
+									<p class="price clearfix">
+										<span class="item-name">
+											Цена
+										</span>
+										<span class="item-value">
+											809 грн.
+										</span>
+									</p>
 								</div>
 							</div>
-							<div class="col-md-3">
-								<div class="product-img">
-									<img src="../image/bedroom/card2.jpg" alt="bedroom" class="img-responsive">
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 product-wrapper">
+							<div class="product-thumb transition">
+								<div class="image">
+									<a href="#">
+										<img src="image/shkaf/shkaf4.jpg" alt="product" title="product" class="img-responsive">
+									</a>
 								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="product-img">
-									<img src="../image/bedroom/card2.jpg" alt="bedroom" class="img-responsive">
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="product-img">
-									<img src="../image/bedroom/card3.jpg" alt="bedroom" class="img-responsive">
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="product-img">
-									<img src="../image/bedroom/card4.jpg" alt="bedroom" class="img-responsive">
+								<div class="caption">
+									<h4 class="product-name"><a href="#">Шкаф-купе</a></h4>
+									<p class="clearfix">
+										<span class="item-name etc-items">
+											Длина
+										</span>
+										<span class="item-value etc-items">
+											2 000 см
+										</span>
+									</p>
+									<p class="clearfix">
+										<span class="item-name etc-items">
+											Ширина
+										</span>
+										<span class="item-value etc-items">
+											1 200 см
+										</span>
+									</p>
+									<p class="clearfix">
+										<span class="item-name etc-items">
+											Высота
+										</span>
+										<span class="item-value etc-items">
+											170 см
+										</span>
+									</p>
+									<p class="price clearfix">
+										<span class="item-name">
+											Цена
+										</span>
+										<span class="item-value">
+											809 грн.
+										</span>
+									</p>
 								</div>
 							</div>
 						</div>
@@ -398,5 +535,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="dist/OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
+	<script src="js/custom.js"></script>
 </body>
 </html>
