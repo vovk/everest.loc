@@ -21,6 +21,11 @@
     src: local('OpenSans-Light'), /* проверяем наличие шрифта в ОС пользователя */
          url(../fonts/OpenSans-Light.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
 }
+@font-face {
+    font-family: OpenSans-SemiBold; /* имя шрифта для CSS правил */
+    src: local('OpenSans-SemiBold'), /* проверяем наличие шрифта в ОС пользователя */
+         url(../fonts/OpenSans-SemiBold.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+}
 #top{
 	background-color: #f7f7f7;
 	padding: 10px;
@@ -815,6 +820,10 @@ div.full-product:not(:first-child){
 }
 /*/07-product.html*/
 /*tabs*/
+#tabs-container{
+	margin-top: 25px;
+	overflow: hidden;
+}
 .tabs-menu {
     height: 30px;
     clear: both;
@@ -824,36 +833,49 @@ div.full-product:not(:first-child){
     line-height: 30px;
     float: left;
     margin-right: 10px;
-    background-color: #ccc;
-    border-top: 1px solid #d4d4d1;
-    border-right: 1px solid #d4d4d1;
-    border-left: 1px solid #d4d4d1;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    width: 175px;
+    text-align: center;
+    border: none;
 }
 .tabs-menu li.current {
     position: relative;
-    background-color: #fff;
-    border-bottom: 1px solid #fff;
+    background-color: #000;
+    border-radius: 20px;
+    width: 175px;
+    text-align: center;
     z-index: 5;
 }
-.tabs-menu li a {
-    padding: 10px;
-    text-transform: uppercase;
+.tabs-menu li.current a{
     color: #fff;
+    font-family: OpenSans-SemiBold;
+    font-size: 16px;
+    padding: 0;
+}
+.tabs-menu li a {
+    text-transform: normal;
+    color: #000;
+    font-family: OpenSans-SemiBold;
+    font-size: 16px;
     text-decoration: none; 
 }
 .tabs-menu .current a {
     color: #2e7da3;
 }
 .tab {
-    border: 1px solid #d4d4d1;
     background-color: #fff;
-    margin-bottom: 20px;
     width: auto;
 }
 .tab-content {
     width: auto;
-    padding: 20px;
+    padding: 20px 0 0 0;
     display: none;
+}
+.tab-content p{
+	font-family: OpenSans-SemiBold;
+	font-size: 16px;
+	padding: 0;
 }
 #tab-1 {
  display: block;   
@@ -861,7 +883,7 @@ div.full-product:not(:first-child){
 /*/tabs*/
 div.reviews-text{
 	border-right: 1px solid #ccc;
-	padding: 0;
+	padding: 0 0 25px 0;
 	position: relative;
 }
 div.reviews-text h2, div.reviews-form h2{
