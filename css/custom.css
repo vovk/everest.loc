@@ -743,6 +743,9 @@ div.breadcrumbs{
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
+.portrait .radio{
+	display: inline-block;
+}
 .portrait p{
 	color: #000;
 	display: inline-block;
