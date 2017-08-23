@@ -26,6 +26,22 @@
     src: local('OpenSans-SemiBold'), /* проверяем наличие шрифта в ОС пользователя */
          url(../fonts/OpenSans-SemiBold.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
 }
+.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #000!important;
+	font-family: OpenSans-Regular;
+}
+.form-control::-moz-placeholder { /* Firefox 19+ */
+	color: #000!important;
+	font-family: OpenSans-Regular;
+}
+.form-control:-ms-input-placeholder { /* IE 10+ */
+	color: #000!important;
+	font-family: OpenSans-Regular;
+}
+.form-control:-moz-placeholder { /* Firefox 18- */
+	color: #000!important;
+	font-family: OpenSans-Regular;
+}
 #top{
 	background-color: #f7f7f7;
 	padding: 10px;
@@ -96,22 +112,6 @@ button#quick-search{
 }
 button#quick-search i{
 	font-size: 30px;
-}
-.form-control.search::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-	color: #000;
-	font-family: OpenSans-Regular;
-}
-.form-control.search::-moz-placeholder { /* Firefox 19+ */
-	color: #000;
-	font-family: OpenSans-Regular;
-}
-.form-control.search:-ms-input-placeholder { /* IE 10+ */
-	color: #000;
-	font-family: OpenSans-Regular;
-}
-.form-control.search:-moz-placeholder { /* Firefox 18- */
-	color: #000;
-	font-family: OpenSans-Regular;
 }
 ul.personal{
 	color: #000;
@@ -998,3 +998,90 @@ div.filter h4{
 	top: 7px;
 }
 /*/shkaf.html*/
+/*order.html*/
+.processing-order{
+	margin: 0 auto;
+	padding: 25px;
+	width: 600px;
+	overflow: auto;
+}
+.processing-order .wrapper{
+	display: inline-block;
+	width: 32%;
+	position: relative;
+	text-align: center;
+	overflow: visible;
+	min-height: 80px;
+}
+.processing-order .wrapper:nth-of-type(1){
+	text-align: left;
+}
+.processing-order .wrapper:nth-of-type(3){
+	text-align: right;
+}
+.processing-order .ord{
+	border: 1px solid #000;
+	color: #000;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.processing-order .ord-type{
+	position: absolute;
+	bottom: 0px;
+	font-family: OpenSans-Bold;
+	font-size: 12px;
+}
+.processing-order .ord-type.first{
+	left: -10px;
+}
+.processing-order .ord-type.second{
+	left: 60px;
+}
+.processing-order .ord-type.third{
+	right: -10px;
+}
+.order-form{
+	margin-top: 50px;
+	overflow: auto;
+}
+.order-form .form-group{
+	display: inline-block;
+	float: left;
+	width: 45%;
+	margin-right: 10%;
+}
+.order-form .form-group:nth-of-type(2n){
+	margin-right: 0;
+}
+.order-form .form-group input{
+	border: 1px solid #000;
+	color: #000;
+	margin-bottom: 15px;
+}
+.order-form .form-group input:focus{
+	outline: none;
+	border: 2px solid #000;
+}
+.order-form .form-group label{
+	color: #000;
+	margin-bottom: 15px;
+}
+.processing-order .next{
+	margin-top: 25px;
+	position: relative;
+	width: 100%;
+}
+.processing-order .next span{
+	font-family: OpenSans-Bold;
+	font-size: 16px;
+	position: absolute;
+	top: 10px;
+	right: 75px;
+}
+.processing-order .next .direction-right{
+	float: right;
+}
+/*/order.html*/
