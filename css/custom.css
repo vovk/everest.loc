@@ -1079,6 +1079,8 @@ div.filter h4{
 	width: 100%;
 }
 .processing-order .next span{
+	color: #000;
+	cursor: pointer;
 	font-family: OpenSans-Bold;
 	font-size: 16px;
 	position: absolute;
@@ -1086,6 +1088,7 @@ div.filter h4{
 	right: 75px;
 }
 .processing-order .next .direction-right{
+	cursor: pointer;
 	float: right;
 }
 /*/order.html*/
@@ -1246,7 +1249,7 @@ input[type=number]
 }
 #cart p.full-price .full{
 	position: absolute;
-	right: 29%;
+	right: 25%;
 }
 #cart .show-product button{
 	float: right;
@@ -1255,3 +1258,120 @@ input[type=number]
 #cart .modal-footer{
 	padding-bottom: 25px;
 }
+#my-acc ul.tabs-menu{
+/*	display: flex;
+	justify-content: space-between;
+	align-items: center;*/
+}
+#my-acc ul.tabs-menu li{
+	width: 21%;
+	margin-right: 5%;
+}
+#my-acc ul.tabs-menu li:last-child{
+	margin-right: 0;
+}
+#my-acc .tab-content .my-name{
+	padding: 25px 0 0 0;
+}
+#my-acc .tab-content .my-name h4{
+	font-size: 24px;
+	font-family: OpenSans-Bold;
+}
+#my-acc .tab-content .my-name span{
+	display: inline-block;
+	font-size: 16.01px;
+	font-family: OpenSans-Light;
+}
+#my-acc .my-address input{
+	border: 1px solid #000;
+	color: #000;
+}
+#my-acc .my-address .form-group input:focus{
+	outline: none;
+	border: 2px solid #000;
+}
+#my-acc .my-address .form-group{
+	display: inline-block;
+	float: left;
+	width: 25%;
+	margin-right: 5%;
+	margin-bottom: 40px;
+}
+#my-acc .my-address .form-group label{
+	color: #000;
+	margin-bottom: 15px;
+}
+#my-acc .my-address .form-group.small{
+	width: 10%;
+}
+#my-acc .my-address .form-group.small input{
+	text-align: center;
+	width: 40px;
+	padding: 5px;
+}
+#my-history .date{
+	border-bottom: 1px solid #ccc;
+	font-size: 16px;
+	font-family: OpenSans-Bold;
+	padding: 25px 0;
+}
+#my-history .characters{
+	width: 55%;
+}
+#my-personal-page ~ footer{
+	margin-top: 75px;
+}
+#cart span.refresh-product{
+	background: url(../image/refresh-white.png) no-repeat center center;
+	background-color: #000;
+	border-radius: 50%;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	line-height: unset;
+	text-align: center;
+	overflow: hidden;
+	margin-top: 7.5px;
+}
+#cart span.refresh-product:hover{
+	background: url(../image/refresh.png) no-repeat center center;
+	background-color: #fff;
+	border: 1px solid #000;
+	color: #000;
+}
+/*checkbox*/
+.styled-checkbox {
+	position: absolute;
+	opacity: 0;
+}
+.styled-checkbox + label {
+	position: relative;
+	cursor: pointer;
+	padding: 0;
+}
+.styled-checkbox + label:before {
+	content: '';
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: text-top;
+	width: 20px;
+	height: 20px;
+	background: white;
+	border-radius: 2.5px;
+	border: 1px solid #000;
+}
+.styled-checkbox:checked + label:after {
+	content: '';
+	position: absolute;
+	left: 4px;
+	top: 12px;
+	background: #000;
+	width: 2px;
+	height: 2px;
+	box-shadow: -2px 0 0 #000, 0px 0 0 #000, 2px 0 0 #000, 4px 0 0 #000, 4px -2px 0 #000, 4px -4px 0 #000, 4px -6px 0 #000, 4px -8px 0 #000, 4px -10px 0 #000, 4px -12px 0 #000, 4px -14px 0 #000;
+	-webkit-transform: rotate(40deg);
+	transform: rotate(40deg);
+}
+/*/checkbox*/

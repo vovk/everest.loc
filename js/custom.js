@@ -54,6 +54,7 @@ $(document).ready(function(){
         $(tab).fadeIn();
     });
 
+    //cart quantity
     jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="image/ic_arrow_drop_up.png"></div><div class="quantity-button quantity-down"><img src="image/arrow-down.png"></div></div>').insertAfter('.quantity input');
     jQuery('.quantity').each(function() {
       var spinner = jQuery(this),
