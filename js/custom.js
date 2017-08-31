@@ -100,7 +100,7 @@ $(document).ready(function(){
     		}, 
     		700,
     		'easeInSine');
-    	$(this).closest('.order-container1').siblings('.wrapper:first').find('.image-processing>img').css('height', '2px');
+    	$(this).closest('.order-container1').siblings('.wrapper:first').find('.image-processing').css('height', '2px');
     	$(this).closest('.order-container1').siblings('.wrapper.wrapper2').find('.ord').addClass('this');
     });
 
@@ -115,7 +115,7 @@ $(document).ready(function(){
     		}, 
     		700,
     		'easeInSine');
-    		$(this).closest('.order-container2').siblings('.wrapper.wrapper2').find('.image-processing>img').css('height', '2px');
+    		$(this).closest('.order-container2').siblings('.wrapper.wrapper2').find('.image-processing').css('height', '2px');
 			$(this).closest('.order-container2').siblings('.wrapper.wrapper3').find('.ord').addClass('this');
 		}
 	});

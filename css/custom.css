@@ -286,6 +286,9 @@ div.sub-main-nav ul>li:hover{
 #productSlider .arrows .direction-right a{
 	float: right;
 }
+.owl-stage-outer{
+	background: 
+}
 div.carousel-inner{
 	padding-bottom: 35px;
 }
@@ -470,6 +473,9 @@ div.descr{
 	line-height: 1;
 	text-align: left;
 	padding: 0 10%;
+}
+.product-thumb .caption p.price{
+	min-height: 56px;
 }
 .item-name{
 	color: #000;
@@ -1017,15 +1023,18 @@ div.filter h4{
 /*/shkaf.html*/
 /*order.html*/
 .image-processing{
-	position: absolute;
+    position: absolute;
     left: 30px;
-    top: 3px;
-}
-.image-processing img{
-	max-width: 222px;
+    top: 14px;
+    height: 1px;
+    background: #000;
+    width: 222px;
+    max-width: 222px;
 }
 .wrapper2 .image-processing{
-	left: 103.5px;
+	left: 103px;   
+    width: 223px;
+	max-width: 223px; 
 }
 .processing-order{
 	margin: 0 auto;
