@@ -101,6 +101,8 @@ ul.top-list li a{
 }
 button#quick-search{
 	background: transparent;
+	border: 1px solid transparent;
+	box-shadow: unset;
 	color: #000;
 	font-size: 0;
 	font-family: OpenSans-Regular;
@@ -195,7 +197,13 @@ ul.main-nav li:last-child{
 ul.main-nav li.dropdown:hover{
 	border-top: 2px solid #000;
 }
-ul.main-nav li.dropdown.line{
+/*ul.main-nav li.dropdown.line{
+	border-top: 2px solid #000;
+}*/
+#navigation ul.main-nav>li{
+	border-top: 2px solid transparent;
+}
+#navigation ul.main-nav li.dropdown:hover{
 	border-top: 2px solid #000;
 }
 #navigation ul.main-nav>li>a{
@@ -205,7 +213,15 @@ ul.main-nav li.dropdown.line{
 	font-weight: bold;
 	text-decoration: none;
 	text-transform: uppercase;
-	padding: 15px 0;
+	/*padding: 15px 0;*/
+	padding: 0;
+	margin-top: 13px;
+}
+#navigation .see-all{
+	padding-left: 15px;
+}
+#navigation .see-all:hover{
+	background: url(../image/ic_arrow_drop_down.png) no-repeat 5px center;
 }
 div.sub-main-nav{
 	border: none;
@@ -213,7 +229,8 @@ div.sub-main-nav{
 	box-shadow: none;
 	left: 0;
 	padding: 10px;
-	width: 225px;
+	/*width: 225px;*/
+	width: 250px;
 }
 div.sub-main-nav ul>li{
 	padding: 10px 15px;
@@ -999,6 +1016,17 @@ div.filter h4{
 }
 /*/shkaf.html*/
 /*order.html*/
+.image-processing{
+	position: absolute;
+    left: 30px;
+    top: 3px;
+}
+.image-processing img{
+	max-width: 222px;
+}
+.wrapper2 .image-processing{
+	left: 103.5px;
+}
 .processing-order{
 	margin: 0 auto;
 	padding: 25px;
@@ -1012,6 +1040,7 @@ div.filter h4{
 	text-align: center;
 	overflow: visible;
 	min-height: 80px;
+	position: relative;
 }
 .processing-order .wrapper:nth-of-type(1){
 	text-align: left;
@@ -1028,6 +1057,7 @@ div.filter h4{
 	height: 30px;
 	line-height: 30px;
 	text-align: center;
+	position: relative;
 }
 .processing-order .ord.this{
 	font-family: OpenSans-Bold;
@@ -1074,18 +1104,24 @@ div.filter h4{
 	margin-bottom: 15px;
 }
 .processing-order .next{
+	cursor: pointer;
+	float: right;
 	margin-top: 25px;
 	position: relative;
-	width: 100%;
+	width: 150px;
+	overflow: hidden;
 }
 .processing-order .next span{
 	color: #000;
 	cursor: pointer;
 	font-family: OpenSans-Bold;
 	font-size: 16px;
-	position: absolute;
+	/*position: absolute;
 	top: 10px;
 	right: 75px;
+	width: 100px;*/
+	display: inline-block;
+	margin-top: 10px;
 }
 .processing-order .next .direction-right{
 	cursor: pointer;
@@ -1375,3 +1411,6 @@ input[type=number]
 	transform: rotate(40deg);
 }
 /*/checkbox*/
+.order-container2, .order-container3{
+	display: none;
+}
