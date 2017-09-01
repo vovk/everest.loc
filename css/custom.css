@@ -394,9 +394,12 @@ a.left.carousel-control.left-black:active{
     text-align: center;
     text-decoration: none!important;
 }
-.show-product button:hover{
+.show-product button:hover, .show-product button:focus{
 	color: #fff;
 	background-color: #3D3D3D;
+}
+.show-product button:focus{
+	outline: none;
 }
 .show-product button:active{
 	color: #fff;
@@ -1112,29 +1115,41 @@ div.filter h4{
 	color: #000;
 	margin-bottom: 15px;
 }
-.processing-order .next{
+.processing-order .next,
+.processing-order .prev{
 	cursor: pointer;
-	float: right;
 	margin-top: 25px;
 	position: relative;
 	width: 150px;
 	overflow: hidden;
 }
-.processing-order .next span{
+.processing-order .next{
+	float: right;
+}
+.processing-order .prev{
+	float: left;
+}
+.processing-order .next span,
+.processing-order .prev span{
 	color: #000;
 	cursor: pointer;
 	font-family: OpenSans-Bold;
 	font-size: 16px;
-	/*position: absolute;
-	top: 10px;
-	right: 75px;
-	width: 100px;*/
 	display: inline-block;
 	margin-top: 10px;
+}
+.processing-order .prev span{
+	float: right;
 }
 .processing-order .next .direction-right{
 	cursor: pointer;
 	float: right;
+}
+.processing-order .prev .direction-left{
+	cursor: pointer;
+}
+.processing-order .prev .direction-left a.left.carousel-control.left-black{
+	float: left;
 }
 /*/order.html*/
 #cart div.title-wrapper{
@@ -1420,6 +1435,47 @@ input[type=number]
 	transform: rotate(40deg);
 }
 /*/checkbox*/
+/*order.html*/
 .order-container2, .order-container3{
 	display: none;
+}
+.order-form .half{
+	float: left;
+}
+.order-container2 .half .form-group{
+	float: none;
+	width: 100%;
+}
+.order-container2 .half .form-group.small{
+	float: left;
+	width: 40%;
+	margin-right: 10%;
+}
+.order-container2 .half .form-group.small:last-child{
+	margin-right: 0;
+}
+.order-container2 .half .form-group.small input{
+	width: 60px;
+	text-align: center;
+}
+.order-container2 .half:nth-of-type(2){
+	padding-left: 25px;
+}
+.order-container3 .form-group{
+	width: 30%;
+	margin-right: 5%;
+}
+.order-container3 .form-group:nth-of-type(2n){
+	margin-right: 5%;
+}
+.order-container3 .form-group:last-child{
+	margin-right: 0;
+}
+.order-container3 .show-product{
+	float: right;
+}
+/*/order.html*/
+.alert.alert-success{
+	overflow: hidden;
+	text-align: center;
 }

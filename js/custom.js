@@ -90,33 +90,77 @@ $(document).ready(function(){
 
 
     //процесс заказа
-    $('.order-container1 .next1').on("click", function(){
-    	$(this).closest('.order-container1').toggle(700);
-    	$('.order-container1').next('.order-container2').toggle(400);
-    	$('.ord.this').animate(
-    		{
-    			backgroundColor: '#000',
-    			color: '#fff'
-    		}, 
-    		700,
-    		'easeInSine');
-    	$(this).closest('.order-container1').siblings('.wrapper:first').find('.image-processing').css('height', '2px');
-    	$(this).closest('.order-container1').siblings('.wrapper.wrapper2').find('.ord').addClass('this');
-    });
+ //    $('.order-container1 .next1').on("click", function(){
+ //    	$(this).closest('.order-container1').toggle(700);
+ //    	$('.order-container1').next('.order-container2').toggle(400);
+ //    	$('.ord.this').animate(
+ //    		{
+ //    			backgroundColor: '#000',
+ //    			color: '#fff'
+ //    		}, 
+ //    		700,
+ //    		'easeInSine');
+ //    	$(this).closest('.order-container1').siblings('.wrapper:first').find('.image-processing').css('height', '2px');
+ //    	$(this).closest('.order-container1').siblings('.wrapper.wrapper2').find('.ord').addClass('this');
+ //    	var form = $('form#form-order');
+ //    });
 
-    $('.order-container2 .next2').on("click", function(){
-		if(($('.order-container2').is(':visible'))){
-			$(this).closest('.order-container2').toggle(700);
-			$('.order-container2').next('.order-container3').toggle(400);
-			$('.ord.this').animate(
-    		{
-    			backgroundColor: '#000',
-    			color: '#fff'
-    		}, 
-    		700,
-    		'easeInSine');
-    		$(this).closest('.order-container2').siblings('.wrapper.wrapper2').find('.image-processing').css('height', '2px');
-			$(this).closest('.order-container2').siblings('.wrapper.wrapper3').find('.ord').addClass('this');
+ //    $('.order-container2 .next2').on("click", function(){
+	// 	if(($('.order-container2').is(':visible'))){
+	// 		$(this).closest('.order-container2').toggle(700);
+	// 		$('.order-container2').next('.order-container3').toggle(400);
+	// 		$('.ord.this').animate(
+ //    		{
+ //    			backgroundColor: '#000',
+ //    			color: '#fff'
+ //    		}, 
+ //    		700,
+ //    		'easeInSine');
+ //    		$(this).closest('.order-container2').siblings('.wrapper.wrapper2').find('.image-processing').css('height', '2px');
+	// 		$(this).closest('.order-container2').siblings('.wrapper.wrapper3').find('.ord').addClass('this');
+	// 	}
+	// });
+
+	//validation form
+	function showError(container, errorMessage) {
+		container.className = 'error';
+		var msgElem = document.createElement('span');
+		msgElem.className = "error-message";
+		msgElem.innerHTML = errorMessage;
+		container.appendChild(msgElem);
+    }
+
+    function resetError(container) {
+		container.className = '';
+		if (container.lastChild.className == "error-message") {
+			container.removeChild(container.lastChild);
 		}
-	});
+    }
+
+    function validate(form) {
+		var elems = form.elements;
+
+		resetError(elems.from.parentNode);
+		if (!elems.from.value) {
+			showError(elems.from.parentNode, ' Укажите от кого.');
+		}
+
+		resetError(elems.password.parentNode);
+		if (!elems.password.value) {
+			showError(elems.password.parentNode, ' Укажите пароль.');
+		} else if (elems.password.value != elems.password2.value) {
+			showError(elems.password.parentNode, ' Пароли не совпадают.');
+		}
+
+		resetError(elems.to.parentNode);
+		if (!elems.to.value) {
+			showError(elems.to.parentNode, ' Укажите, куда.');
+		}
+
+		resetError(elems.message.parentNode);
+		if (!elems.message.value) {
+			showError(elems.message.parentNode, ' Отсутствует текст.');
+		}
+
+    }
 });

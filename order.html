@@ -304,53 +304,75 @@
 									</span>
 								</div>
 								<section class="order-container order-container1">
-									<div class="order-form order-form1">
-										<form>
+									<form id="form-order">
+										<div class="order-form order-form1">
 											<div class="form-group">
 												<label for="exampleInputName">Введите Ваше имя:</label>
-												<input type="text" class="form-control" id="exampleInputName" placeholder="Иван">
+												<input type="text" class="form-control" id="exampleInputName" placeholder="Иван" required>
 											</div>
 											<div class="form-group">
 												<label for="exampleInputsurName">Введите Вашу фамилию:</label>
-												<input type="text" class="form-control" id="exampleInputsurName" placeholder="Иванoв">
+												<input type="text" class="form-control" id="exampleInputsurName" placeholder="Иванoв" required>
 											</div>
 											<div class="form-group">
 												<label for="exampleInputPhone">Введите Ваш телефон:</label>
-												<input type="text" class="form-control" id="exampleInputPhone" placeholder="(095) 867 13 27">
+												<input type="text" class="form-control" id="exampleInputPhone" placeholder="(095) 867 13 27" required>
 											</div>
 											<div class="form-group">
 												<label for="exampleInputemail">Введите Ваш email:</label>
-												<input type="text" class="form-control" id="exampleInputemail" placeholder="ivanov@ivan.ua">
+												<input type="text" class="form-control" id="exampleInputemail" placeholder="ivanov@ivan.ua" required>
 											</div>
-										</form>
-									</div>
-									<div class="next next1">
-										<span>Дальше</span>
-										<div class="direction direction-right">
-											<a class="right carousel-control"></a>
 										</div>
-									</div>
+										<div class="next next1">
+											<span>Дальше</span>
+											<div class="direction direction-right">
+												<a class="right carousel-control"></a>
+											</div>
+										</div>
+										<input type="submit" value="check">
+									</form>
 								</section>
 								<section class="order-container order-container2">
 									<div class="order-form order-form2">
-										<form>
-											<div class="form-group">222222222222
-												<label for="exampleInputName">Введите Ваше имя:</label>
-												<input type="text" class="form-control" id="exampleInputName" placeholder="Иван">
+										<div class="half">
+						            		<div class="form-group">
+												<label for="exampleInputIndex">Индекс:</label>
+												<input type="text" class="form-control" id="exampleInputIndex" placeholder="69254">
 											</div>
 											<div class="form-group">
-												<label for="exampleInputsurName">Введите Вашу фамилию:</label>
-												<input type="text" class="form-control" id="exampleInputsurName" placeholder="Иванoв">
+												<label for="exampleInputsurCountry">Страна:</label>
+												<input type="text" class="form-control" id="exampleInputsurCountry" placeholder="Украина">
 											</div>
 											<div class="form-group">
-												<label for="exampleInputPhone">Введите Ваш телефон:</label>
-												<input type="text" class="form-control" id="exampleInputPhone" placeholder="(095) 867 13 27">
+												<label for="exampleInputPlace">Область:</label>
+												<input type="text" class="form-control" id="exampleInputPlace" placeholder="Запорожская">
 											</div>
 											<div class="form-group">
-												<label for="exampleInputemail">Введите Ваш email:</label>
-												<input type="text" class="form-control" id="exampleInputemail" placeholder="ivanov@ivan.ua">
+												<label for="exampleInputcity">Город:</label>
+												<input type="text" class="form-control" id="exampleInputcity" placeholder="Запорожье">
 											</div>
-										</form>
+											<div class="form-group">
+												<label for="exampleInputStreet">Улица:</label>
+												<input type="text" class="form-control" id="exampleInputStreet" placeholder="бул. Шевченко">
+											</div>
+											<div class="form-group small">
+												<label for="exampleInputHome">Дом:</label>
+												<input type="text" class="form-control" id="exampleInputHome" placeholder="14">
+											</div>
+											<div class="form-group small">
+												<label for="exampleInputroom">Кваритра:</label>
+												<input type="text" class="form-control" id="exampleInputroom" placeholder="88">
+											</div>
+										</div>
+										<div class="half">
+											<div id="map" style="min-height: 543px;margin-top: 35px;"></div>
+										</div>
+									</div>
+									<div class="prev prev2">
+										<div class="direction direction-left">
+											<span>Назад</span>
+			          						<a class="left carousel-control left-black"></a>
+			          					</div>
 									</div>
 									<div class="next next2">
 										<span>Дальше</span>
@@ -361,30 +383,21 @@
 								</section>
 								<section class="order-container order-container3">
 									<div class="order-form order-form3">
-										<form id="form-order">
-											<div class="form-group">33333333
-												<label for="exampleInputName">Введите Ваше имя:</label>
-												<input type="text" class="form-control" id="exampleInputName" placeholder="Иван">
-											</div>
-											<div class="form-group">
-												<label for="exampleInputsurName">Введите Вашу фамилию:</label>
-												<input type="text" class="form-control" id="exampleInputsurName" placeholder="Иванoв">
-											</div>
-											<div class="form-group">
-												<label for="exampleInputPhone">Введите Ваш телефон:</label>
-												<input type="text" class="form-control" id="exampleInputPhone" placeholder="(095) 867 13 27">
-											</div>
-											<div class="form-group">
-												<label for="exampleInputemail">Введите Ваш email:</label>
-												<input type="text" class="form-control" id="exampleInputemail" placeholder="ivanov@ivan.ua">
-											</div>
-										</form>
-									</div>
-									<div class="next next3">
-										<span>Дальше</span>
-										<div class="direction direction-right">
-											<a class="right carousel-control"></a>
+										<div class="form-group">
+											<input class="styled-checkbox" id="styled-checkbox-1" type="radio" value="value1" name="radio">
+											<label for="styled-checkbox-1">Наличными</label>
 										</div>
+										<div class="form-group">
+											<input class="styled-checkbox" id="styled-checkbox-2" type="radio" value="value2" name="radio">
+											<label for="styled-checkbox-2">Безналичными</label>
+										</div>
+										<div class="form-group">
+											<input class="styled-checkbox" id="styled-checkbox-3" type="radio" value="value3" name="radio">
+											<label for="styled-checkbox-3">Visa / Mastercard</label>
+										</div>
+									</div>
+									<div class="show-product">
+										<button type="button"><i class="fa fa-shopping-cart"></i><span class="hidden-xs hidden-sm hidden-md">Подтвердить заказ</span></button>
 									</div>
 								</section>
 							</div>
@@ -439,5 +452,16 @@
 	</footer>
 	<script src="dist/OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
 	<script src="js/custom.js"></script>
+		<script>
+		var map;
+		function initMap() {
+			map = new google.maps.Map(document.getElementById('map'), {
+				center: {lat: 47.809483, lng: 35.185083},
+				zoom: 8
+			});
+		}
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQZq3lWVuUNkAaqvZrtSG4XngYGp6yrW0&callback=initMap"
+    async defer></script>
 </body>
 </html>
