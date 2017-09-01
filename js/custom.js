@@ -88,28 +88,16 @@ $(document).ready(function(){
 
     });
 
-
-    //процесс заказа
+    //validation form
     function validateForm1() {
 	    var name = document.forms["form-order"]["fname"].value;
 	    var surname = document.forms["form-order"]["fsurname"].value;
 	    var phone = document.forms["form-order"]["fphone"].value;
 	    var mail = document.forms["form-order"]["fmail"].value;
-	    // var index = document.forms["form-order2"]["findex"].value;
-	    // var country = document.forms["form-order2"]["fcountry"].value;
-	    // var area = document.forms["form-order2"]["farea"].value;
-	    // var city = document.forms["form-order2"]["fcity"].value;
-	    // var street = document.forms["form-order"]["fstreet"].value;
-	    // var house = document.forms["form-order"]["fhouse"].value;
-	    // var room = document.forms["form-order"]["froom"].value;
 	    if ((name == "") || (surname == "") || (mail == "") || (mail == "")){
 	        alert("Нужно заполнить все поля");
 	        return true;
 	    }
-	    // else if ((index == "") || (country == "") || (area == "") || (city == "") || (street == "") || (house == "") || (room == "")){
-	    //     alert("Нужно заполнить все поля");
-	    //     return true;
-	    // }
 	}
 	function validateForm2() {
 	    var index = document.forms["form-order2"]["findex"].value;
@@ -124,6 +112,7 @@ $(document).ready(function(){
 	        return true;
 	    }
 	}
+	//процесс заказа
     $('.order-container1 .next1').on("click", function(){
     	if(!validateForm1()){
     		$(this).closest('.order-container1').toggle(700);
@@ -158,6 +147,18 @@ $(document).ready(function(){
 		}
 	});
 
-	//validation form
+	$('.order-container3 .show-product>button').on("click", function(){
+		if(($('.order-container3').is(':visible'))){
+			$('.ord.this').animate(
+	    		{
+	    			backgroundColor: '#000',
+	    			color: '#fff'
+	    		}, 
+	    		700,
+	    		'easeInSine');
+    		$(this).closest('.order-container3').siblings('.wrapper.wrapper2').find('.image-processing').css('height', '2px');
+
+		}
+	});
 
 });
