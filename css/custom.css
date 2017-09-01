@@ -370,6 +370,11 @@ a.left.carousel-control.left-black:active{
     line-height: normal;
     text-transform: uppercase;
 }
+.title a{
+	color: #000;
+    font-family: OpenSans-Bold;
+    font-size: 30px;
+}
 .description-block{
 	color: #000;
 	font-size: 16px;
@@ -378,7 +383,8 @@ a.left.carousel-control.left-black:active{
 }
 .cost{
 	color: #000;
-	font-size: 32px;
+	/*font-size: 32px;*/
+	font-size: 30px;
 	font-family: OpenSans-Regular;
 	margin-bottom: 25px;
 	text-transform: uppercase;
@@ -1478,4 +1484,7 @@ input[type=number]
 .alert.alert-success{
 	overflow: hidden;
 	text-align: center;
+}
+.owl-stage{
+	background: #f7f7f7;
 }

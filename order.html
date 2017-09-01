@@ -280,7 +280,6 @@
 								<div class="wrapper wrapper1">
 									<p class="ord img-circle this">1</p>
 									<p class="image-processing">
-									<!-- <img src="image/line.png" alt="line"> -->
 									</p>
 									<span class="ord-type first">
 										Личные<br>
@@ -304,23 +303,24 @@
 									</span>
 								</div>
 								<section class="order-container order-container1">
-									<form id="form-order">
+
+									<form id="form-order" class="form-order">
 										<div class="order-form order-form1">
 											<div class="form-group">
 												<label for="exampleInputName">Введите Ваше имя:</label>
-												<input type="text" class="form-control" id="exampleInputName" placeholder="Иван" required>
+												<input type="text" class="form-control" id="exampleInputName" placeholder="Иван" name="fname" required>
 											</div>
 											<div class="form-group">
 												<label for="exampleInputsurName">Введите Вашу фамилию:</label>
-												<input type="text" class="form-control" id="exampleInputsurName" placeholder="Иванoв" required>
+												<input type="text" class="form-control" id="exampleInputsurName" placeholder="Иванoв" name="fsurname" required>
 											</div>
 											<div class="form-group">
 												<label for="exampleInputPhone">Введите Ваш телефон:</label>
-												<input type="text" class="form-control" id="exampleInputPhone" placeholder="(095) 867 13 27" required>
+												<input type="text" class="form-control" id="exampleInputPhone" placeholder="(095) 867 13 27" name="fphone" required>
 											</div>
 											<div class="form-group">
 												<label for="exampleInputemail">Введите Ваш email:</label>
-												<input type="text" class="form-control" id="exampleInputemail" placeholder="ivanov@ivan.ua" required>
+												<input type="text" class="form-control" id="exampleInputemail" placeholder="ivanov@ivan.ua" name="fmail" required>
 											</div>
 										</div>
 										<div class="next next1">
@@ -329,76 +329,82 @@
 												<a class="right carousel-control"></a>
 											</div>
 										</div>
-										<input type="submit" value="check">
 									</form>
+
 								</section>
 								<section class="order-container order-container2">
-									<div class="order-form order-form2">
-										<div class="half">
-						            		<div class="form-group">
-												<label for="exampleInputIndex">Индекс:</label>
-												<input type="text" class="form-control" id="exampleInputIndex" placeholder="69254">
+
+									<form id="form-order2" class="form-order">
+										<div class="order-form order-form2">
+											<div class="half">
+							            		<div class="form-group">
+													<label for="exampleInputIndex">Индекс:</label>
+													<input type="text" class="form-control" id="exampleInputIndex" placeholder="69254" name="findex">
+												</div>
+												<div class="form-group">
+													<label for="exampleInputsurCountry">Страна:</label>
+													<input type="text" class="form-control" id="exampleInputsurCountry" placeholder="Украина" name="fcountry" required>
+												</div>
+												<div class="form-group">
+													<label for="exampleInputPlace">Область:</label>
+													<input type="text" class="form-control" id="exampleInputArea" placeholder="Запорожская" name="farea" required>
+												</div>
+												<div class="form-group">
+													<label for="exampleInputcity">Город:</label>
+													<input type="text" class="form-control" id="exampleInputcity" placeholder="Запорожье" name="fcity" required>
+												</div>
+												<div class="form-group">
+													<label for="exampleInputStreet">Улица:</label>
+													<input type="text" class="form-control" id="exampleInputStreet" placeholder="бул. Шевченко" name="fstreet" required>
+												</div>
+												<div class="form-group small">
+													<label for="exampleInputHome">Дом:</label>
+													<input type="text" class="form-control" id="exampleInputHome" placeholder="14" name="fhouse" required>
+												</div>
+												<div class="form-group small">
+													<label for="exampleInputroom">Кваритра:</label>
+													<input type="text" class="form-control" id="exampleInputroom" placeholder="88" name="froom" required>
+												</div>
 											</div>
-											<div class="form-group">
-												<label for="exampleInputsurCountry">Страна:</label>
-												<input type="text" class="form-control" id="exampleInputsurCountry" placeholder="Украина">
-											</div>
-											<div class="form-group">
-												<label for="exampleInputPlace">Область:</label>
-												<input type="text" class="form-control" id="exampleInputPlace" placeholder="Запорожская">
-											</div>
-											<div class="form-group">
-												<label for="exampleInputcity">Город:</label>
-												<input type="text" class="form-control" id="exampleInputcity" placeholder="Запорожье">
-											</div>
-											<div class="form-group">
-												<label for="exampleInputStreet">Улица:</label>
-												<input type="text" class="form-control" id="exampleInputStreet" placeholder="бул. Шевченко">
-											</div>
-											<div class="form-group small">
-												<label for="exampleInputHome">Дом:</label>
-												<input type="text" class="form-control" id="exampleInputHome" placeholder="14">
-											</div>
-											<div class="form-group small">
-												<label for="exampleInputroom">Кваритра:</label>
-												<input type="text" class="form-control" id="exampleInputroom" placeholder="88">
+											<div class="half">
+												<div id="map" style="min-height: 543px;margin-top: 35px;"></div>
 											</div>
 										</div>
-										<div class="half">
-											<div id="map" style="min-height: 543px;margin-top: 35px;"></div>
+										<div class="prev prev2">
+											<div class="direction direction-left">
+												<span>Назад</span>
+				          						<a class="left carousel-control left-black"></a>
+				          					</div>
 										</div>
-									</div>
-									<div class="prev prev2">
-										<div class="direction direction-left">
-											<span>Назад</span>
-			          						<a class="left carousel-control left-black"></a>
-			          					</div>
-									</div>
-									<div class="next next2">
-										<span>Дальше</span>
-										<div class="direction direction-right">
-											<a class="right carousel-control"></a>
+										<div class="next next2">
+											<span>Дальше</span>
+											<div class="direction direction-right">
+												<a class="right carousel-control"></a>
+											</div>
 										</div>
-									</div>
+									</form>
+
 								</section>
 								<section class="order-container order-container3">
-									<div class="order-form order-form3">
-										<div class="form-group">
-											<input class="styled-checkbox" id="styled-checkbox-1" type="radio" value="value1" name="radio">
-											<label for="styled-checkbox-1">Наличными</label>
+									<form id="form-order3">
+										<div class="order-form order-form3">
+											<div class="form-group">
+												<input class="styled-checkbox" id="styled-checkbox-1" type="radio" value="value1" name="radio">
+												<label for="styled-checkbox-1">Наличными</label>
+											</div>
+											<div class="form-group">
+												<input class="styled-checkbox" id="styled-checkbox-2" type="radio" value="value2" name="radio">
+												<label for="styled-checkbox-2">Безналичными</label>
+											</div>
+											<div class="form-group">
+												<input class="styled-checkbox" id="styled-checkbox-3" type="radio" value="value3" name="radio">
+												<label for="styled-checkbox-3">Visa / Mastercard</label>
+											</div>
 										</div>
-										<div class="form-group">
-											<input class="styled-checkbox" id="styled-checkbox-2" type="radio" value="value2" name="radio">
-											<label for="styled-checkbox-2">Безналичными</label>
+										<div class="show-product">
+											<button type="button"><i class="fa fa-shopping-cart"></i><span class="hidden-xs hidden-sm hidden-md">Подтвердить заказ</span></button>
 										</div>
-										<div class="form-group">
-											<input class="styled-checkbox" id="styled-checkbox-3" type="radio" value="value3" name="radio">
-											<label for="styled-checkbox-3">Visa / Mastercard</label>
-										</div>
-									</div>
-									<div class="show-product">
-										<button type="button"><i class="fa fa-shopping-cart"></i><span class="hidden-xs hidden-sm hidden-md">Подтвердить заказ</span></button>
-									</div>
+									</form>
 								</section>
 							</div>
 						</div>
