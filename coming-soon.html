@@ -25,21 +25,129 @@
 		<div class="row">
 			<div id="content" class="col-sm-12">
 				<div class="coming-soon-wrapper">
-					<img src="image/coming.jpg" alt="coming soon" class="img-responsive">
-					<div class="coming-soon">
-						<p class="error">
-							404
-							<span>Page not found</span>
+					<div class="half pull-left">
+						<div class="soon">
+							<a href="index.html">
+								<img src="image/coming-soon.png" alt="logotip">
+							</a>
+						</div>
+					</div>
+					<div class="half pull-left">
+						<p class="start">
+							Запуск сайта через 
 						</p>
-						<div class="show-product soon">
-							<a href="index.html"><button type="button"><i class="fa fa-shopping-cart"></i><span class="hidden-xs hidden-sm hidden-md">Back Home</span></button></a>
+						<div class="countdown-container">
+							<div class="clock row">
+
+								<!-- days --> 
+								<div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
+									<div class="wrap">
+										<div class="inner">
+											<div id="canvas_days" class="clock-canvas"></div>
+											<div class="text">
+												<p class="val">0</p>
+												<p class="type-days type-time">Дней</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- hours --> 
+								<div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3">
+									<div class="wrap">
+										<div class="inner">
+											<div id="canvas_hours" class="clock-canvas"></div>
+											<div class="text">
+												<p class="val">0</p>
+												<p class="type-hours type-time">Часов</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- minutes --> 
+								<div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3">
+									<div class="wrap">
+										<div class="inner">
+											<div id="canvas_minutes" class="clock-canvas"></div>
+											<div class="text">
+												<p class="val">0</p>
+												<p class="type-minutes type-time">Минут</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- seconds --> 
+								<div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
+									<div class="wrap">
+										<div class="inner">
+											<div id="canvas_seconds" class="clock-canvas"></div>
+											<div class="text">
+												<p class="val">0</p>
+												<p class="type-seconds type-time">Секунд</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-12 text-center notify">
+							<p class="text-left">
+								Оставьте Ваш e-mail для того, чтобы мы могли<br>оповестить Вас о запуске нашего сайта
+							</p>
+							<input type="text" placeholder="Ваш e-mail">
+							<div class="show-product clearfix">
+								<button type="button"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Оповестить</span></button>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<script src="dist/OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
-	<script src="js/custom.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script> 
+	<script type="text/javascript" src="https://www.jqueryscript.net/demo/Modern-Circular-jQuery-Countdown-Timer-Plugin-Final-Countdown/js/kinetic.js"></script> 
+	<script type="text/javascript" src="https://www.jqueryscript.net/demo/Modern-Circular-jQuery-Countdown-Timer-Plugin-Final-Countdown/jquery.final-countdown.js"></script>
+	<script>
+		jQuery(document).ready(function() {
+		jQuery('.countdown').final_countdown(
+		{
+			start: '1362139200',
+			end: '1388461320',
+			now: '1387461319',
+			selectors: {
+			    value_seconds: '.clock-seconds .val',
+			    canvas_seconds: 'canvas_seconds',
+			    value_minutes: '.clock-minutes .val',
+			    canvas_minutes: 'canvas_minutes',
+			    value_hours: '.clock-hours .val',
+			    canvas_hours: 'canvas_hours',
+			    value_days: '.clock-days .val',
+			    canvas_days: 'canvas_days'
+			},
+			seconds: {
+			    borderColor: '#7995D5',
+			    borderWidth: '3'
+			},
+			minutes: {
+			    borderColor: '#808080',
+			    borderWidth: '3'
+			},
+			hours: {
+			    borderColor: '#f7b0b0',
+			    borderWidth: '3'
+			},
+			days: {
+			    borderColor: '#e3cde4',
+			}
+		}, 
+		function() {
+			// Finish callback
+		}
+		);
+	});
+	</script>
 </body>
 </html>
