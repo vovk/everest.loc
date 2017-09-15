@@ -1746,3 +1746,6 @@ div.clock-item{
     text-decoration: line-through;
     margin-left: 10px;
 }
+.tabloid{
+	overflow: auto;
+}

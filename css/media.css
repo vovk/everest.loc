@@ -79,9 +79,12 @@
 		min-width: 35%;
 	}
 	#wish-list div.title-wrapper::before,
-	#wish-list div.title-wrapper::after{
+	#wish-list div.title-wrapper::after,
+	#my-acc div.title-wrapper::before,
+	#my-acc div.title-wrapper::after{
 		min-width: 30%;
 	}
+
 	#shkaf .half{
 		max-height: 265px;
 	}
@@ -101,6 +104,18 @@
 	#shkaf .row.list div.product-wrapper{
 		margin-top: 15px;
 	}
+	#my-acc .my-address .form-group label{
+		font-size: 13px;
+	}
+	#my-acc #tab-4 .my-name{
+		padding-top: 45px;
+	}
+	.styled-checkbox + label{
+		font-size: 13px;
+	}
+}
+@media screen and (max-width: 1150px){
+	
 }
 @media screen and (max-width: 991px){
 	ul.top-list li a{
@@ -197,7 +212,8 @@
 		width: 25%;
 	}
 	#shkaf .row.list div.product-wrapper,
-	#wish-list .row.list div.product-wrapper{
+	#wish-list .row.list div.product-wrapper,
+	#my-acc div.product-wrapper{
 		width: 50%;
 		margin: 0;
 	}
@@ -218,6 +234,28 @@
 	}
 	.coming-soon-wrapper .text .type-time{
 		font-size: 15px;
+	}
+	#my-personal-page div.product-wrapper{
+		/*width: 25%;*/
+	}
+	#my-history .characters{
+		width: 30%;
+	}
+	#my-acc .my-address .form-group{
+		float: unset;
+		margin: 0;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	#my-acc .my-address .form-group label{
+		margin-bottom: 5px;
+	}
+	#my-acc .tab-content .my-name,
+	#my-acc #tab-4 .my-name{
+		padding-top: 0;
+	}
+	#wish-list .list{
+		margin-left: 0;
 	}
 }
 @media screen and (max-width: 900px){
@@ -354,6 +392,9 @@
 	.notify p{
 		font-size: 12px;
 	}
+	div.distribute .form-group{
+		width: 100%;
+	}
 }
 @media screen and (max-width: 745px){
 	#shkaf .half{
@@ -364,6 +405,10 @@
 	}
 	#shkaf .half img{
 		margin: 10px auto;
+	}
+	.tabs-menu li a,
+	.tabs-menu li.current a{
+		font-size: 14px;
 	}
 }
 @media screen and (max-width: 650px){
@@ -412,7 +457,9 @@
     	font-size: 12px;
     }
 	#wish-list div.title-wrapper::before,
-	#wish-list div.title-wrapper::after{
+	#wish-list div.title-wrapper::after,
+	#my-acc div.title-wrapper::before,
+	#my-acc div.title-wrapper::after{
 		min-width: 25%;
 	}
 	.page404{
@@ -426,6 +473,15 @@
 	}
 	.soon img{
 		width: 70%;
+	}
+	.tabs-menu li a, .tabs-menu li.current a{
+		font-size: 12px;
+	}
+	#my-acc .tab-content .my-name h4{
+		font-size: 20px;
+	}
+	#my-acc .tab-content .my-name span{
+		font-size: 12px;
 	}
 }
 @media screen and (max-width: 550px){
@@ -444,6 +500,10 @@
 	}
 	.notify input{
 		width: 100%;
+	}
+	#my-acc .my-address .form-group.small{
+		width: auto;
+		margin-right: 15px;
 	}
 }
 @media screen and (max-width: 500px){
@@ -492,7 +552,8 @@
 		width: 100%;
 	}
 	#shkaf .row.list div.product-wrapper,
-	#wish-list .row.list div.product-wrapper{
+	#wish-list .row.list div.product-wrapper,
+	#my-acc div.product-wrapper{
 		width: 100%;
 	}
 	.coming-soon-wrapper .clock{
@@ -532,7 +593,9 @@
 		top: 30px;
 	}
 	#wish-list div.title-wrapper::before,
-	#wish-list div.title-wrapper::after{
+	#wish-list div.title-wrapper::after,
+	#my-acc div.title-wrapper::before,
+	#my-acc div.title-wrapper::after{
 		min-width: 20%;
 		top: 30px;
 	}
@@ -626,7 +689,9 @@
 		top: 30px;
 	}
 	#wish-list div.title-wrapper::before, 
-	#wish-list div.title-wrapper::after{
+	#wish-list div.title-wrapper::after,
+	#my-acc div.title-wrapper::before,
+	#my-acc div.title-wrapper::after{
 		min-width: 17.5%;
 		top: 30px;
 	}
