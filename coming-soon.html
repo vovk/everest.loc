@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/media.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -40,7 +42,7 @@
 							<div class="clock row">
 
 								<!-- days --> 
-								<div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
+								<div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3 col-xs-3">
 									<div class="wrap">
 										<div class="inner">
 											<div id="canvas_days" class="clock-canvas"></div>
@@ -53,7 +55,7 @@
 								</div>
 
 								<!-- hours --> 
-								<div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3">
+								<div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3 col-xs-3">
 									<div class="wrap">
 										<div class="inner">
 											<div id="canvas_hours" class="clock-canvas"></div>
@@ -66,7 +68,7 @@
 								</div>
 
 								<!-- minutes --> 
-								<div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3">
+								<div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3 col-xs-3">
 									<div class="wrap">
 										<div class="inner">
 											<div id="canvas_minutes" class="clock-canvas"></div>
@@ -79,7 +81,7 @@
 								</div>
 
 								<!-- seconds --> 
-								<div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
+								<div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3 col-xs-3">
 									<div class="wrap">
 										<div class="inner">
 											<div id="canvas_seconds" class="clock-canvas"></div>
@@ -93,13 +95,13 @@
 							</div>
 
 						</div>
-						<div class="col-md-12 text-center notify">
+						<div class="col-md-12 col-sm-12 col-xs-12 text-center notify">
 							<p class="text-left">
 								Оставьте Ваш e-mail для того, чтобы мы могли<br>оповестить Вас о запуске нашего сайта
 							</p>
 							<input type="text" placeholder="Ваш e-mail">
 							<div class="show-product clearfix">
-								<button type="button"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Оповестить</span></button>
+								<button type="button"><i class="fa fa-shopping-cart"></i> <span class="">Оповестить</span></button>
 							</div>
 						</div>
 					</div>

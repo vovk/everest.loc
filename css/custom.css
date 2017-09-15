@@ -975,6 +975,9 @@ div.reviews-text .reviews p{
 	background: #f7f7f7;
 	padding: 83.5px 100px;
 }
+#shkaf .half:nth-of-type(1) p:nth-of-type(1){
+	margin-bottom: 50px;
+}
 @-moz-document url-prefix()
 {
 	#shkaf .half:nth-of-type(1){
@@ -1555,9 +1558,9 @@ div.distribute .form-group{
 }
 .page404-content{
 	background: url(../image/StockSnap_F172ZU4AND.jpg) no-repeat left top;
-	-webkit-background-size: cover;
-	background-size: cover;
-	min-height: 100vh;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	height: 100vh;
 }
 .page404{
 	position: absolute;
@@ -1605,6 +1608,9 @@ div.distribute .form-group{
 .soon{
 	padding-top: 25%;
 	text-align: center;
+}
+.soon img{
+	cursor: pointer;
 }
 .coming-soon-wrapper p.start{
 	color: #262626;
@@ -1704,7 +1710,7 @@ div.clock-item{
 	margin: 0 auto;
 }
 .notify .show-product button{
-	margin: 50px auto;
+	margin: 50px auto 0 auto;
 }
 @keyframes updown {
     0%   {right: 0;}
