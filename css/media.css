@@ -97,7 +97,8 @@
 	.price .from::after{
 		right: 5px;
 	}
-	div.product-wrapper{
+	div.product-wrapper,
+	.full-product:last-child div.product-wrapper{
 		margin: 0;
 		margin-right: 3%;
 	}
@@ -213,7 +214,8 @@
 	}
 	#shkaf .row.list div.product-wrapper,
 	#wish-list .row.list div.product-wrapper,
-	#my-acc div.product-wrapper{
+	#my-acc div.product-wrapper,
+	.full-product:last-child div.product-wrapper{
 		width: 50%;
 		margin: 0;
 	}
@@ -257,6 +259,23 @@
 	#wish-list .list{
 		margin-left: 0;
 	}
+	.full-description div.show-product:last-child{
+		min-width: auto;
+	}
+	.full-product h2.title-page ~ p,
+	.portrait p span,
+	div.reviews-text .reviews p{
+		font-size: 14px;
+	}
+	.full-product h2.title-page{
+		font-size: 20px;
+	}
+	.full-product label{
+		font-size: 11px;
+	}
+	div.reviews-form{
+		padding-right: 0;
+	}
 }
 @media screen and (max-width: 900px){
 	.information-block{
@@ -283,6 +302,9 @@
 	}
 }
 @media screen and (max-width: 767px){
+	.collapse{
+		display: none;
+	}
 	.footer-nav li a, .numbers{
 		font-size: 11px;
 	}
@@ -304,11 +326,17 @@
 	.description-block{
 		width: 200px;
 	}
-	#navigation ul.main-nav > li{
+/*	#navigation ul.main-nav > li{
 		display: inline-block;
 	}
 	ul.main-nav li{
 		margin-right: 2%;
+	}*/
+	#navigation ul.main-nav li.dropdown:hover{
+		border-top: unset;
+	}
+	#navigation ul.main-nav{
+		padding-bottom: 15px;
 	}
 	.navbar-nav{
 		margin: 0!important;
@@ -341,7 +369,7 @@
 		font-size: 13px;
 	}
 	#navigation{
-		display: none;
+		/*display: none;*/
 	}
 	footer{
 		padding: 20px 25px;
@@ -395,6 +423,29 @@
 	div.distribute .form-group{
 		width: 100%;
 	}
+	.full-description{
+		margin-top: 25px;
+	}
+	div.reviews-form{
+		border: unset;
+		padding-left: 0;
+	}
+	.reviews-form .show-product{
+		margin-top: 0;
+		float: unset;
+	}
+	div.reviews-form form{
+		/*width: 500px;*/
+		margin: 0 auto;
+	}
+	div.reviews-form input,
+	textarea.form-control{
+		max-width: 100%; 
+	}
+	div.reviews-text{
+		max-height: 390px;
+		overflow-y: scroll;
+	}
 }
 @media screen and (max-width: 745px){
 	#shkaf .half{
@@ -409,6 +460,15 @@
 	.tabs-menu li a,
 	.tabs-menu li.current a{
 		font-size: 14px;
+	}
+	.tab-content p{
+		font-size: 12px;
+	}
+	.tab_drawer_heading{
+		font-size: 14px;
+	}
+	.tab_drawer_heading.d_active{
+		font-size: 16px;
 	}
 }
 @media screen and (max-width: 650px){
@@ -553,7 +613,8 @@
 	}
 	#shkaf .row.list div.product-wrapper,
 	#wish-list .row.list div.product-wrapper,
-	#my-acc div.product-wrapper{
+	#my-acc div.product-wrapper,
+	.full-product:last-child div.product-wrapper{
 		width: 100%;
 	}
 	.coming-soon-wrapper .clock{
@@ -565,6 +626,12 @@
 	}
 	.coming-soon-wrapper .text{
 		top: 52.5px;
+	}
+	.title{
+		font-size: 15px;
+	}
+	div.reviews-form{
+		margin-top: 15px;
 	}
 }
 @media screen and (min-width: 425px) and (max-width: 434px){
@@ -600,6 +667,9 @@
 		top: 30px;
 	}
 	.coming-soon-wrapper .text .type-time{
+		font-size: 12px;
+	}
+	.full-product h2.title-page ~ p, .portrait p span, div.reviews-text .reviews p{
 		font-size: 12px;
 	}
 }
@@ -714,4 +784,20 @@
 	.coming-soon-wrapper p.start{
 		font-size: 15px;
 	}
+	.full-description div.show-product{
+		margin-right: 15px;
+	}
+	.full-product h2.title-page{
+		font-size: 16px;
+	}
+	.full-product h2.title-page ~ p, 
+	.portrait p span, 
+	div.reviews-text .reviews p{
+		font-size: 12px;
+	}
 }
+@media screen and (max-width: 320px){
+	.full-description div.show-product{
+		margin-right: 5px;
+	}
+} 

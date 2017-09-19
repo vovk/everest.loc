@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/media.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -21,7 +23,7 @@
 	<title>Everest</title>
 </head>
 <body>
-	<nav id="top">
+	<!-- <nav id="top">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -43,15 +45,15 @@
 				</div>
 			</div>
 		</div>
-	</nav>
+	</nav> -->
 	<header>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<div class="col-md-2 logo">
+					<div class="col-md-2 col-xs-12 logo">
 						<a href="index.html"><img src="image/logo.png" alt="logo" class="img-responsive"></a>
 					</div>
-					<div class="col-md-4 quick-search-wrapper">
+					<div class="col-md-4 col-xs-12 quick-search-wrapper">
 						<form class="form-inline quick-search-form" role="form" action="#">
 							<div class="form-group">
 								<input type="text" class="form-control search" placeholder="Поиск по сайту">
@@ -61,7 +63,7 @@
 							</button>
 						</form>
 				    </div>
-				    <div class="col-md-6 icons">
+				    <div class="col-md-6 col-xs-12 icons">
 				    	<ul class="personal">
 				    		<li class="dropdown person"><a href="#" class="dropdown-toggle drop" data-toggle="dropdown">Личный кабинет</a>
 					    		<div class="dropdown-menu">
@@ -73,8 +75,8 @@
 					    			</div>
 					    		</div>
 				    		</li>
-				    		<li class="wish"><a href="#">Желания<span class="img-circle wish-count">+25</span></a></li>
-				    		<li class="cart"><a href="#">Корзина<span class="img-circle cart-count">+99</span></a></li>
+				    		<li class="wish"><a href="wish-list.html">Желания<span class="img-circle wish-count">+25</span></a></li>
+				    		<li class="cart"><a href="#" data-toggle="modal" data-target="#cart">Корзина<span class="img-circle cart-count">+99</span></a></li>
 				    	</ul>
 				    	<!-- Modal autorization -->
 						<div id="autorizationModal" class="modal fade" role="dialog">
@@ -100,8 +102,11 @@
 										</div>
 										<div class="modal-footer">
 											<div class="modal-body-wrapper">
+												<!-- <div class="show-product clearfix">
+													<a href="#">Войти</a>
+												</div> -->
 												<div class="show-product clearfix">
-													<button type="button"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Просмотреть</span></button>
+													<button type="button"><i class="fa fa-shopping-cart"></i> <span>Просмотреть</span></button>
 												</div>
 											</div>
 										</div>
@@ -136,8 +141,9 @@
 										<div class="modal-footer">
 											<div class="modal-body-wrapper">
 												<div class="show-product clearfix">
-													<button type="button"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Просмотреть</span></button>
+													<button type="button"><i class="fa fa-shopping-cart"></i> <span>Просмотреть</span></button>
 												</div>
+												<div class="clearfix"></div>
 												<div class="social">
 													<p>
 														Войти: <span><img src="image/twitter.png" alt="twitter"><img src="image/inst.png" alt="inst"><img src="image/fb.png" alt="fb"></span>		
@@ -150,6 +156,117 @@
 							</div>
 						</div>
 						<!--/ Modal registration -->
+						<!-- Cart -->
+						<div id="cart" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<div class="title-wrapper">
+											<h2 class="title-page">Корзина</h2>
+										</div>
+									</div>
+									<div class="modal-body">
+										<div class="col-md-12">
+											<div class="product-thumb transition">
+												<div class="image">
+													<a href="#">
+														<img src="image/product7.png" alt="product" title="product" class="img-responsive">
+													</a>
+												</div>
+												<div class="caption">
+													<h4 class="product-name"><a href="#">Комод Регина</a></h4>
+													<div class="characters">
+														<p class="clearfix">
+															<span class="item-name">
+																Длина:
+															</span>
+															<span class="item-value">
+																1500 мм
+															</span>
+														</p>
+														<p class="clearfix">
+															<span class="item-name">
+																Глубина:
+															</span>
+															<span class="item-value">
+																520 мм
+															</span>
+														</p>
+														<p class="clearfix">
+															<span class="item-name">
+																Высота:
+															</span>
+															<span class="item-value">
+																1200 мм
+															</span>
+														</p>
+													</div>
+													<div class="quantity">
+														<input type="number" min="0" step="1" value="1">
+													</div>
+													<p class="price">2809.00 грн.</p>
+													<span class="delete-product">x</span>
+												</div>
+											</div>
+											<div class="product-thumb transition">
+												<div class="image">
+													<a href="#">
+														<img src="image/product8.png" alt="product" title="product" class="img-responsive">
+													</a>
+												</div>
+												<div class="caption">
+													<h4 class="product-name"><a href="#">Комод Регина</a></h4>
+													<div class="characters">
+														<p class="clearfix">
+															<span class="item-name">
+																Длина:
+															</span>
+															<span class="item-value">
+																1500 мм
+															</span>
+														</p>
+														<p class="clearfix">
+															<span class="item-name">
+																Глубина:
+															</span>
+															<span class="item-value">
+																520 мм
+															</span>
+														</p>
+														<p class="clearfix">
+															<span class="item-name">
+																Высота:
+															</span>
+															<span class="item-value">
+																1200 мм
+															</span>
+														</p>
+													</div>
+													<div class="quantity">
+														<input type="number" min="0" step="1" value="1">
+													</div>
+													<p class="price">2809.00 грн.</p>
+													<span class="delete-product">x</span>
+												</div>
+											</div>
+											<div class="result">
+												<p class="full-price price">
+													Общая стоимость: <span class="full">4409.00 грн.</span>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<div class="show-product clearfix">
+											<button type="button"><i class="fa fa-shopping-cart"></i> <span class="">Оформить</span></button>
+											<button type="button"><i class="fa fa-shopping-cart"></i> <span class="">Продолжать покупки</span></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--/ Cart -->
 				    </div>
 				</div>
 			</div>
@@ -158,11 +275,17 @@
 	<nav class="navbar navbar-default" id="navigation">
 		<div class="container">
 			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 			</div>
-			<div class="navbar-content">
+			<div id="navbar" class="navbar-content navbar-collapse collapse" aria-expanded="false" aria-controls="navbar">
 				<ul class="nav navbar-nav main-nav">
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Гостиные</a>
+						<a href="#">Гостиные</a>
 						<div class="dropdown-menu sub-main-nav">
 			    			<div class="dropdown-inner">
 								<ul>
@@ -176,7 +299,7 @@
 						</div>
 					</li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Детские</a>
+						<a href="#">Детские</a>
 						<div class="dropdown-menu sub-main-nav">
 			    			<div class="dropdown-inner">
 								<ul>
@@ -190,7 +313,7 @@
 						</div>
 					</li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Спальни</a>
+						<a href="#">Спальни</a>
 						<div class="dropdown-menu sub-main-nav">
 			    			<div class="dropdown-inner">
 								<ul>
@@ -205,7 +328,7 @@
 						</div>
 					</li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Шкафы-купе</a>
+						<a href="#">Шкафы-купе</a>
 						<div class="dropdown-menu sub-main-nav">
 			    			<div class="dropdown-inner">
 								<ul>
@@ -221,8 +344,8 @@
 							</div>
 						</div>
 					</li>
-					<li class="dropdown line">
-						<a href="#" class="dropdown-toggle" data-toggle="">Прихожие</a>
+					<li class="dropdown">
+						<a href="#">Прихожие</a>
 						<div class="dropdown-menu sub-main-nav">
 			    			<div class="dropdown-inner">
 								<ul>
@@ -235,7 +358,7 @@
 						</div>
 					</li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Кухни</a>
+						<a href="#">Кухни</a>
 						<div class="dropdown-menu sub-main-nav">
 			    			<div class="dropdown-inner">
 								<ul>
@@ -248,7 +371,7 @@
 						</div>
 					</li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Столы и стулья</a>
+						<a href="#">Столы и стулья</a>
 						<div class="dropdown-menu sub-main-nav">
 			    			<div class="dropdown-inner">
 								<ul>
@@ -268,18 +391,19 @@
 			<div id="content" class="col-sm-12">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-12 breadcrumbs">
+						<div class="col-sm-12 col-xs-12 breadcrumbs">
 							<p>
 								<a href="#"><span>Спальни</span></a><img src="image/ic_arrow_drop_down.png" alt="next"><a href="#"><span>Готовые наборы</span></a><img src="image/ic_arrow_drop_down.png" alt="next"><a href="#"><span>Спальни "Аврора"</span></a>
 							</p>
 						</div>
 						<div class="alert alert-success">Товар <a href="#">Мини стенка "Стелла"</a> добавлен в <a href="#">корзину покупок</a>! <button type="button" class="close" data-dismiss="alert">×</button></div>
-						<div class="col-md-12">
+						<div class="clearfix"></div>
+						<div class="col-md-12 col-sm-12 col-xs-12">
 							<div class="full-product">
-								<div class="col-md-4">
+								<div class="col-md-4 col-sm-4 col-xs-12">
 									<img src="image/07-bedroom.jpg" alt="bedroom" class="img-responsive">
 								</div>
-								<div class="col-md-8">
+								<div class="col-md-8 col-sm-8 col-xs-12">
 									<div class="full-description">
 										<h2 class="title-page">
 											Спальня Аврора
@@ -307,7 +431,7 @@
 												<label>
 													<input type="radio" name="name">
 													<p>
-														<span><img src="image/color1.png" alt="color"><a href="#">Дуб Бонифацио</a></span>
+														<span><img src="image/color1.png" alt="color">Дуб Бонифацио</span>
 													</p>
 												</label>
 											</div>
@@ -315,7 +439,7 @@
 												<label>
 													<input type="radio" name="name">
 													<p>
-														<span><img src="image/color2.png" alt="color"><a href="#">Дуб Массив</a></span>
+														<span><img src="image/color2.png" alt="color">Дуб Массив</span>
 													</p>
 												</label>
 											</div>
@@ -324,40 +448,43 @@
 											<p>14 681.00 грн.</p>
 										</div>
 										<div class="show-product clearfix">
-											<button type="button"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">В закладки</span></button>
+											<button type="button"><i class="fa fa-shopping-cart"></i> <span class="">В закладки</span></button>
 										</div>
 										<div class="show-product clearfix">
-											<button type="button"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Купить</span></button>
+											<button type="button"><i class="fa fa-shopping-cart"></i> <span class="">Купить</span></button>
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="full-product">
-								<div class="col-md-12">
+								<div class="col-md-12 col-sm-12 col-xs-12">
 									<h2 class="title-page">
 										Характеристика
 									</h2>
 									<div id="tabs-container">
 									    <ul class="tabs-menu">
-									        <li class="current"><a href="#tab-1">Гарантия</a></li>
-									        <li><a href="#tab-2">Материалы</a></li>
-									        <li><a href="#tab-3">Общие</a></li>
+									        <li class="current" rel="tab1"><a>Гарантия</a></li>
+									        <li rel="tab2"><a>Материалы</a></li>
+									        <li rel="tab3"><a>Общие</a></li>
 									    </ul>
 									    <div class="tab">
-									        <div id="tab-1" class="tab-content">
-									            <p class="col-md-3">Производство</p>
-									            <p class="col-md-2">Украина</p>
+											<h3 class="d_active tab_drawer_heading" rel="tab1">Гарантия</h3>
+									        <div id="tab1" class="tab-content">
+									            <p class="col-md-3 col-sm-3 col-xs-4">Производство</p>
+									            <p class="col-md-2 col-sm-2 col-xs-4">Украина</p>
 									            <p class="clearfix"></p>
-												<p class="col-md-3">Гарантийный срок</p>
-									            <p class="col-md-2">12 месяцев</p>
+												<p class="col-md-3 col-sm-3 col-xs-4">Гарантийный срок</p>
+									            <p class="col-md-2 col-sm-2 col-xs-4">12 месяцев</p>
 									            <p class="clearfix"></p>
-									            <p class="col-md-3">Срок службы</p>
-									            <p class="col-md-2">8 лет</p>
+									            <p class="col-md-3 col-sm-3 col-xs-4">Срок службы</p>
+									            <p class="col-md-2 col-sm-2 col-xs-4">8 лет</p>
 									        </div>
-									        <div id="tab-2" class="tab-content">
+											<h3 class="d_active tab_drawer_heading" rel="tab2">Материалы</h3>
+									        <div id="tab2" class="tab-content">
 									            <p>Donec semper dictum sem, quis pretium sem malesuada non. Proin venenatis orci vel nisl porta sollicitudin. Pellentesque sit amet massa et orci malesuada facilisis vel vel lectus. Etiam tristique volutpat auctor. Morbi nec massa eget sem ultricies fermentum id ut ligula. Praesent aliquet adipiscing dictum. Suspendisse dignissim dui tortor. Integer faucibus interdum justo, mattis commodo elit tempor id. Quisque ut orci orci, sit amet mattis nulla. Suspendisse quam diam, feugiat at ullamcorper eget, sagittis sed eros. Proin tortor tellus, pulvinar at imperdiet in, egestas sed nisl. Aenean tempor neque ut felis dignissim ac congue felis viverra. </p>
 									        </div>
-									        <div id="tab-3" class="tab-content">
+											<h3 class="d_active tab_drawer_heading" rel="tab3">Общие</h3>
+									        <div id="tab3" class="tab-content">
 									            <p>Duis egestas fermentum ipsum et commodo. Proin bibendum consectetur elit, hendrerit porta mi dictum eu. Vestibulum adipiscing euismod laoreet. Vivamus lobortis tortor a odio consectetur pulvinar. Proin blandit ornare eros dictum fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur laoreet, ante aliquet molestie laoreet, lectus odio fringilla purus, id porttitor erat velit vitae mi. Nullam posuere nunc ut justo sollicitudin interdum. Donec suscipit eros nec leo condimentum fermentum. Nunc quis libero massa. Integer tempus laoreet lectus id interdum. Integer facilisis egestas dui at convallis. Praesent elementum nisl et erat iaculis a blandit ligula mollis. Vestibulum vitae risus dui, nec sagittis arcu. Nullam tortor enim, placerat quis eleifend in, viverra ac lacus. Ut aliquam sapien ut metus hendrerit auctor dapibus justo porta. </p>
 									        </div>
 									    </div>
@@ -365,8 +492,8 @@
 								</div>
 							</div>
 							<div class="full-product">
-								<div class="col-md-12">
-									<div class="col-md-8 reviews-text">
+								<div class="col-md-12 col-sm-12 col-xs-12">
+									<div class="col-md-8 col-sm-8 col-xs-12 reviews-text">
 										<h2 class="title-page">
 											Отзывы
 										</h2>
@@ -380,7 +507,7 @@
 										</div>
 										<a href="#"><span class="read-more">Читать далее</span></a>
 									</div>
-									<div class="col-md-4 reviews-form">
+									<div class="col-md-4 col-sm-4 col-xs-12 reviews-form">
 										<h2 class="title-page">
 											Оставить отзыв
 										</h2>
@@ -394,14 +521,14 @@
 												<textarea class="form-control" rows="5" id="exampleInputText"></textarea>
 											</div>
 											<div class="show-product clearfix">
-												<button type="button"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Отправить</span></button>
+												<button type="button"><i class="fa fa-shopping-cart"></i> <span class="">Отправить</span></button>
 											</div>
 										</form>
 									</div>
 								</div>
 							</div>
 							<div class="full-product">
-								<div class="col-md-12">
+								<div class="col-md-12 col-sm-12 col-xs-12">
 									<h2 class="title-page">
 										С этим товаром заказывают
 									</h2>
@@ -570,7 +697,7 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-2 col-sm-2">
+				<div class="col-md-2 col-sm-2 col-xs-2">
 					<h5>Личный кабинет</h5>
 					<ul class="list-unstyled footer-nav">
 						<li><a href="#">Список желаний</a></li>
@@ -578,7 +705,7 @@
 						<li><a href="#">Рассылка</a></li>
 					</ul>
 				</div>
-				<div class="col-md-2 col-sm-2">
+				<div class="col-md-2 col-sm-2 col-xs-2">
 					<h5>Информация</h5>
 					<ul class="list-unstyled footer-nav">
 						<li><a href="#">О нас</a></li>
@@ -586,7 +713,7 @@
 						<li><a href="#">Контакты</a></li>
 					</ul>
 				</div>
-				<div class="col-md-2 col-sm-2">
+				<div class="col-md-2 col-sm-2 col-xs-2">
 					<h5>Дополнительно</h5>
 					<ul class="list-unstyled footer-nav">
 						<li><a href="#">Связаться с нами</a></li>
@@ -595,7 +722,7 @@
 						<li><a href="#">Возврат товара</a></li>
 					</ul>
 				</div>
-				<div class="col-md-4 col-sm-4 last-block">
+				<div class="col-md-4 col-sm-4 col-xs-4 last-block">
 					<h5>Контакты:</h5>
 					<ul class="list-unstyled footer-nav numbers">
 						<li><a href="#">(098) 296-96-50</a></li>

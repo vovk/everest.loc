@@ -388,16 +388,18 @@
 						<div class="col-md-12 col-sm-12 col-xs-12 title-wrapper">
 							<h2 class="title-page">Личный кабинет</h2>
 						</div>
+
 						<div class="col-md-12 tabloid">
 							<div id="tabs-container">
 							    <ul class="tabs-menu">
-							        <li class="current"><a href="#tab-1">Личные данные</a></li>
-							        <li><a href="#tab-2">Список желаний</a></li>
-							        <li><a href="#tab-3">История заказов</a></li>
-							        <li><a href="#tab-4">Настройки</a></li>
+							        <li class="current" rel="tab1"><a>Личные данные</a></li>
+							        <li rel="tab2"><a>Список желаний</a></li>
+							        <li rel="tab3"><a>История заказов</a></li>
+							        <li rel="tab4"><a>Настройки</a></li>
 							    </ul>
 							    <div class="tab">
-							        <div id="tab-1" class="tab-content">
+							    	<h3 class="d_active tab_drawer_heading" rel="tab1">Tab 1</h3>
+							        <div id="tab1" class="tab-content">
 							            <div class="col-md-3 col-sm-3 col-xs-3 my-name">
 							            	<h4>Иван Иванов</h4>
 							            	<span>IvanovIvan@mail.ukr</span>
@@ -438,7 +440,8 @@
 							            	</form>
 							            </div>
 							        </div>
-							        <div id="tab-2" class="tab-content">
+							        <h3 class="tab_drawer_heading" rel="tab2">Tab 2</h3>
+							        <div id="tab2" class="tab-content">
 							            <div class="col-md-3 col-sm-6 col-xs-12 product-wrapper">
 											<div class="product-thumb transition">
 												<div class="image">
@@ -512,7 +515,8 @@
 											</div>
 										</div>
 							        </div>
-							        <div id="tab-3" class="tab-content">
+	  								<h3 class="tab_drawer_heading" rel="tab3">Tab 3</h3>
+							        <div id="tab3" class="tab-content">
 							            <div id="cart">
 											<div class="my-dialog">
 												<div class="my-content">
@@ -653,7 +657,8 @@
 											</div>
 										</div>
 							        </div>
-							        <div id="tab-4" class="tab-content">
+							        <h3 class="tab_drawer_heading" rel="tab4">Tab 4</h3>
+							        <div id="tab4" class="tab-content">
 							        	<div class="col-md-3 col-sm-3 col-xs-3 my-name">
 							            	<span class="settings">Изменить свои данные:</span>
 							            	<span class="settings">Изменить пароль:</span>
