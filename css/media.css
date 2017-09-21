@@ -219,24 +219,6 @@
 		width: 50%;
 		margin: 0;
 	}
-	div.clock-item{
-		width: 50px;
-		height: 50px;
-		padding: 0;
-	}
-	.coming-soon-wrapper .clock{
-		width: auto;
-	}
-	.coming-soon-wrapper .text{
-		top: 60px;
-	}
-	.coming-soon-wrapper .text .val,
-	.coming-soon-wrapper p.start{
-		font-size: 20px;
-	}
-	.coming-soon-wrapper .text .type-time{
-		font-size: 15px;
-	}
 	#my-personal-page div.product-wrapper{
 		/*width: 25%;*/
 	}
@@ -302,6 +284,17 @@
 	}
 }
 @media screen and (max-width: 767px){
+	.coming-soon-wrapper .half{
+		min-height: 50vh;
+		max-height: 50vh;
+		/*padding: 10px;*/
+	}
+	.coming-soon-wrapper .half img{
+		max-height: 50vh;
+	}
+	.soon{
+		padding: 0;
+	}
 	.collapse{
 		display: none;
 	}
@@ -413,9 +406,6 @@
 	}
 	div.clock-item{
 		margin: 0;
-	}
-	.coming-soon-wrapper .text{
-		top: 60px;
 	}
 	.notify p{
 		font-size: 12px;
@@ -531,9 +521,6 @@
 	.page404-content{
 		background-position: -280px;
 	}
-	.soon img{
-		width: 70%;
-	}
 	.tabs-menu li a, .tabs-menu li.current a{
 		font-size: 12px;
 	}
@@ -617,21 +604,14 @@
 	.full-product:last-child div.product-wrapper{
 		width: 100%;
 	}
-	.coming-soon-wrapper .clock{
-		justify-content: space-around;
-	}
-	div.clock-item{
-		width: 35px;
-		height: 35px;
-	}
-	.coming-soon-wrapper .text{
-		top: 52.5px;
-	}
 	.title{
 		font-size: 15px;
 	}
 	div.reviews-form{
 		margin-top: 15px;
+	}
+	.coming-soon-wrapper p.start{
+		font-size: 22px;
 	}
 }
 @media screen and (min-width: 425px) and (max-width: 434px){
@@ -665,12 +645,6 @@
 	#my-acc div.title-wrapper::after{
 		min-width: 20%;
 		top: 30px;
-	}
-	.coming-soon-wrapper .text .type-time{
-		font-size: 12px;
-	}
-	.full-product h2.title-page ~ p, .portrait p span, div.reviews-text .reviews p{
-		font-size: 12px;
 	}
 }
 @media screen and (min-width: 320px) and (max-width: 424px){
@@ -774,15 +748,6 @@
 	}
 	.page404{
 		right: 10%;
-	}
-	.coming-soon-wrapper .text .type-time{
-		font-size: 12px;
-	}
-	.notify p{
-		font-size: 10px;
-	}
-	.coming-soon-wrapper p.start{
-		font-size: 15px;
 	}
 	.full-description div.show-product{
 		margin-right: 15px;
