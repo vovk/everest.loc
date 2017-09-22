@@ -412,16 +412,16 @@
             textElement.css("top", Math.round(0.35 * this.data.attributes.item_size));
             textElement.css("left", Math.round(i++ * this.data.attributes.item_size));
             textElement.css("width", this.data.attributes.item_size);
-            textElement.appendTo(this.container);
+            textElement.prependTo(this.container);
 
             var headerElement = $("<h4>");
             headerElement.text(this.config.time[key].text); // Options
             headerElement.css("font-size", Math.round(this.config.text_size * this.data.attributes.item_size));
-            headerElement.appendTo(textElement);
+            headerElement.prependTo(textElement);
 
             var numberElement = $("<span>");
             numberElement.css("font-size", Math.round(this.config.number_size * this.data.attributes.item_size));
-            numberElement.appendTo(textElement);
+            numberElement.prependTo(textElement);
 
             this.data.text_elements[key] = numberElement;
         }
@@ -828,23 +828,23 @@
         time: {
             Days: {
                 show: true,
-                text: "Days",
-                color: "#FC6"
+                text: "Дней",
+                color: "#f7b1b0"
             },
             Hours: {
                 show: true,
-                text: "Hours",
-                color: "#9CF"
+                text: "Часов",
+                color: "#e0d2ec"
             },
             Minutes: {
                 show: true,
-                text: "Minutes",
+                text: "Минут",
                 color: "#BFB"
             },
             Seconds: {
                 show: true,
-                text: "Seconds",
-                color: "#F99"
+                text: "Секунд",
+                color: "#7e10dc"
             }
         }
     };
