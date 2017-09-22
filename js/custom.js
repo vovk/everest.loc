@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 	// owl-carousel
 	$(".imageCategory .owl-carousel").owlCarousel({
         responsive: {
