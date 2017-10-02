@@ -198,4 +198,9 @@ $(document).ready(function(){
 		}
 	});
 
+
+	$('#personal .my-address h4.caption').click(function(){
+		$('.data-wrapper').toggle(300);
+		$(this).toggleClass('ic-down');
+	});
 });
