@@ -388,32 +388,41 @@
 						<div class="col-xs-12 title-wrapper">
 							<h2 class="title-page">Личный кабинет</h2>
 						</div>
-						<div class="col-xs-9 my-name">
-							<h4>Иван Иванов</h4>
-							<span>IvanovIvan@mail.ukr</span>
-							<span>+38(099)1234455</span>
-							<div class="my-address">
-								<h4 class="caption">Изменение личных данных</h4>
-								<div class="data-wrapper">
+						<div class="col-xs-9 my-name personal-contacts">
+							<h4 class="with">Список контактов</h4>
+							<div class="my-address etc">
+								<div class="data-wrapper-contacts">
 					            	<form>
 					            		<div class="form-group">
-											<label for="exampleInputName">Ваше имя:</label>
-											<input type="text" class="form-control" id="exampleInputName" placeholder="Иван">
+											<label for="exampleInputIndex">Индекс:</label>
+											<input type="text" class="form-control" id="exampleInputIndex" placeholder="69254">
 										</div>
 										<div class="form-group">
-											<label for="exampleInputsurSurname">Ваша фамилия:</label>
-											<input type="text" class="form-control" id="exampleInputsurSurname" placeholder="Иванов">
+											<label for="exampleInputsurCountry">Страна:</label>
+											<input type="text" class="form-control" id="exampleInputsurCountry" placeholder="Украина">
 										</div>
 										<div class="form-group">
-											<label for="exampleInputMail">Ваш e-mail:</label>
-											<input type="text" class="form-control" id="exampleInputMail" placeholder="IvanIvanov@gmail.ru">
+											<label for="exampleInputPlace">Область:</label>
+											<input type="text" class="form-control" id="exampleInputPlace" placeholder="Запорожская">
 										</div>
 										<div class="form-group">
-											<label for="exampleInputOldPass">Старый пароль:</label>
-											<input type="text" class="form-control" id="exampleInputOldPass" placeholder="*********">
+											<label for="exampleInputcity">Город:</label>
+											<input type="text" class="form-control" id="exampleInputcity" placeholder="Запорожье">
+										</div>
+										<div class="form-group">
+											<label for="exampleInputStreet">Улица:</label>
+											<input type="text" class="form-control" id="exampleInputStreet" placeholder="бул. Шевченко">
+										</div>
+										<div class="form-group small">
+											<label for="exampleInputHome">Дом:</label>
+											<input type="text" class="form-control small" id="exampleInputHome" placeholder="14">
+										</div>
+										<div class="form-group small">
+											<label for="exampleInputroom">Кваритра:</label>
+											<input type="text" class="form-control" id="exampleInputroom" placeholder="88">
 										</div>
 										<div class="show-product clearfix">
-											<button type="button"><i class="fa fa-shopping-cart"></i> <span>Сохранить</span></button>
+											<button type="button"><i class="fa fa-shopping-cart"></i> <span class="">Сохранить</span></button>
 										</div>
 					            	</form>
 				            	</div>
@@ -422,9 +431,9 @@
 						<aside id="column-right" class="col-xs-3 sidebar-wrapper">
 							<div class="sidebar">
 								<ul class="right-sidebar">
-									<li><a href="personal.html" class="active">Моя информация</a></li>
+									<li><a href="personal.html">Моя информация</a></li>
 									<li><a href="password.html">Пароль</a></li>
-									<li><a href="personal-contacts.html">Список контактов</a></li>
+									<li><a href="personal-contacts.html" class="active">Список контактов</a></li>
 									<li><a href="#">Список желаний</a></li>
 									<li><a href="#">История заказов</a></li>
 									<li><a href="#">Бонусные баллы</a></li>
