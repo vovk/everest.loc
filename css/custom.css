@@ -772,7 +772,10 @@ div.information-by-map .half{
 div.product-wrapper{
 	border: 1px solid #dedede;
 	margin: 50px 3% 0;
-	width: 22%;
+	/*width: 22%;*/
+}
+div.product-wrapper:first-child{
+	margin-left: 0;
 }
 div.product-wrapper:last-child{
 	margin-right: 0;

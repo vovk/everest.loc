@@ -1,0 +1,340 @@
+/*
+
+#personal .my-name{
+	padding: 15px 0 0 25px;
+}
+#personal .my-name h4{
+	font-size: 24px;
+	font-family: OpenSans-Bold;
+}
+#personal .my-name h4.with{
+	border-bottom: 1px solid #eee;
+	padding-bottom: 15px;
+}
+#personal .my-name span{
+	display: block;
+	font-size: 16.01px;
+	font-family: OpenSans-Light;
+	font-weight: bold;
+}
+#personal .sidebar{
+	border: 1px solid #eee;
+	padding: 20px;
+}
+#personal .my-address input{
+	border: 1px solid #000;
+	color: #000;
+}
+#personal .my-address h4.caption,
+#personal .my-address h4.caption-pass{
+	border-bottom: 1px solid #eee;
+	cursor: pointer;
+	font-size: 18px;
+	padding-bottom: 5px;
+	overflow: visible;
+}
+#personal .my-address h4.caption{
+	background: url(../image/ic_down.png) no-repeat 32.5% 37%;
+}
+#personal .my-address h4.caption.ic-down{
+	background: url(../image/select.png) no-repeat 32.5% 40%;
+	border-bottom: 1px solid #eee;
+	cursor: pointer;
+	font-size: 18px;
+	padding-bottom: 5px;
+	overflow: visible;
+}
+#personal .my-address .form-group input:focus{
+	outline: none;
+	border: 2px solid #000;
+}
+#personal .my-address .form-group{
+	display: inline-block;
+	float: left;
+	width: 25%;
+	margin-right: 5%;
+	margin-bottom: 40px;
+}----------------------------------------------->
+/*#personal .my-address .form-group:nth-of-type(2n){
+	margin-right: 0;
+}*/
+/*
+<------------------------------------------------
+#personal .my-address .form-group{
+	width: 40%;
+}
+#personal .my-address .form-group-password{
+	width: 25%;
+}
+#personal .show-product{
+	clear: both;
+	overflow: hidden;
+}
+#personal .my-address .form-group label{
+	color: #000;
+	margin-bottom: 15px;
+}
+#personal .my-address{
+	margin-top: 50px;
+}
+#personal .my-address.etc{
+	margin-top: 25px;
+}
+
+*/
+.data-wrapper-bonus .half{
+	width: 50%;
+	float: left;
+	background-color: #272727;
+	min-height: 182.55px;
+	z-index: 0;
+}
+.data-wrapper-bonus .half:nth-of-type(1){
+	padding: 20px 40px;
+	-webkit-box-shadow: 20px 0px 7px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 20px 0px 7px -1px rgba(0,0,0,0.75);
+	box-shadow: 20px 0px 7px -1px rgba(0,0,0,0.75);
+	position: relative;
+	z-index: 10;
+}
+.data-wrapper-bonus .half:nth-of-type(1) p{
+	color: #fff;
+	font-family: OpenSans-Regular;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+.data-wrapper-bonus .half:nth-of-type(1) p:first-child{
+	font-family: OpenSans-Bold;
+}
+.data-wrapper-bonus .half:nth-of-type(1) p:last-child{
+	margin-bottom: 0;
+}
+.data-wrapper-finance table th{
+	background-color: #272727;
+	color: #fff;
+	text-align: center;
+}
+.data-wrapper-finance table td{
+	text-align: center;
+	color: #000;
+	font-family: OpenSans-Regular;
+}
+.data-wrapper-subscriber .form-group{
+	width: 100%!important;
+	margin-right: 0!important;
+	margin-bottom: 25px!important;
+}
+.data-wrapper-orderhistory #status,
+.data-wrapper-return #status{
+	background: #272727;
+}
+.data-wrapper-orderhistory #status span,
+.data-wrapper-return #status span{
+	color: #fff;
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	padding: 15px 0;
+}
+.data-wrapper-orderhistory #status span:nth-of-type(1),
+.data-wrapper-return #status span:nth-of-type(1){
+	float: left;
+}
+.data-wrapper-orderhistory .quantity input,
+.data-wrapper-return .quantity input{
+	color: #fff!important;
+}
+div.total-sum{
+	padding-right: 0;
+	margin-top: 10px;
+}
+.total-sum p{
+	display: inline-block;
+	color: #000;
+	float: left;
+	font-family: OpenSans-Bold;
+	width: 50%;
+}
+.data-wrapper-return #cart p.price{
+	position: absolute;
+	right: 15px;
+}
+.total-sum p.total-price{
+	margin-left: 0!important;
+	line-height: 1!important;
+	min-height: auto!important;
+	text-align: right;
+	position: static!important;
+}
+.data-wrapper-orderhistory .characters{
+	width: 55%;
+}
+.data-wrapper-orderhistory #cart .product-thumb:first-child{
+	margin-top: 25px;
+}
+@media screen and (max-width: 1199px){
+	#personal .my-address h4.caption,
+	#personal .my-address h4.caption.ic-down{
+		background-position: 40% 37%;
+	}
+	#personal .my-address .form-group label{
+		white-space: nowrap;
+	}
+	.data-wrapper-bonus .half>img{
+		min-height: 182.55px;
+	}
+	.data-wrapper-subscriber .form-group label{
+		white-space: normal!important;
+	}
+	.data-wrapper-orderhistory .characters{
+		width: 150px;
+	}
+	.data-wrapper-orderhistory #cart p.price{
+		margin-left: 10px;
+	}
+}
+@media screen and (max-width: 991px){
+	#personal .my-address h4.caption,
+	#personal .my-address h4.caption.ic-down{
+		background-position: 55% 37%;
+	}
+	#my-personal-page div.title-wrapper::before,
+	#my-personal-page div.title-wrapper::after{
+		min-width: 30%;
+	}
+	ul.right-sidebar li a{
+		font-size: 14px;
+		white-space: nowrap;
+	}
+	.data-wrapper-bonus .half:nth-of-type(1){
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+@media screen and (max-width: 767px){
+	#personal .my-address h4.caption, #personal .my-address h4.caption.ic-down{
+		background-position: 100% 37%;
+	}
+	#personal .my-name{
+		padding-right: 25px;
+	}
+	#personal .my-address .form-group{
+		margin-right: 0;
+		width: 100%;
+	}
+	#my-personal-page div.title-wrapper::before,
+	#my-personal-page div.title-wrapper::after{
+		min-width: 25%;
+	}
+	.data-wrapper-bonus .half:nth-of-type(1){
+		box-shadow: unset;
+		text-align: center;
+	}
+	#personal .my-name h4,
+	#personal .my-name h4.with{
+		font-size: 22px;
+	}
+}
+@media screen and (max-width: 600px){
+	.data-wrapper-bonus .half{
+		width: 100%;
+		float: none;
+		min-height: auto;
+	}
+	.data-wrapper-bonus .half>img{
+		min-height: auto;
+		width: 100%;
+	}
+	.data-wrapper-return #cart .image,
+	.data-wrapper-return #cart .caption,
+	.data-wrapper-orderhistory #cart .image,
+	.data-wrapper-orderhistory #cart .caption{
+		width: 100%;
+		float: unset;
+		margin: 0;
+	}
+	.data-wrapper-orderhistory #cart p.price{
+		margin-left: 10%;
+	}
+	div.total-sum{
+		padding-left: 0;
+	}
+}
+.data-wrapper-orderhistory #cart p.responsive-price{
+	display: none;
+}
+@media screen and (max-width: 500px){
+	.data-wrapper-orderhistory .characters{
+		/*float: unset;
+		margin: 0;
+		width: 100%;*/
+	}
+	.data-wrapper-orderhistory #cart .quantity~p.price{
+		display: none;
+	}
+	.data-wrapper-orderhistory #cart p.responsive-price{
+		display: inline-block;
+		float: right;
+		font-size: 14px;
+		margin-bottom: 0;
+		min-height: 22px;
+		line-height: 22px;
+	}
+}
+@media screen and (max-width: 425px){
+	#personal .my-address h4.caption, #personal .my-address h4.caption.ic-down{
+		font-size: 14px;
+	}
+	.data-wrapper-bonus .half,
+	.data-wrapper-bonus .half>img{
+		min-height: 165px
+	}
+	.data-wrapper-finance table{
+		font-size: 12px;
+		text-align: left;
+	}
+	.data-wrapper-finance table th{
+		white-space: nowrap;
+	}
+	.data-wrapper-finance table th,
+	.data-wrapper-finance table td{
+		text-align: left;
+	}
+	#personal .my-name h4,
+	#personal .my-name h4.with{
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 375px){
+	#my-personal-page div.title-wrapper::before,
+	#my-personal-page div.title-wrapper::after{
+		min-width: 20%;
+	}
+	.data-wrapper-return .item-name,
+	.data-wrapper-return .item-value{
+		font-size: 12px!important;
+		margin: 0!important;
+	}
+	.data-wrapper-return .characters{
+		width: 100px;
+	}
+	.data-wrapper-return #status span{
+		font-size: 12px; 
+	}
+	.data-wrapper-orderhistory .characters{
+		width: 125px;
+	}
+	.data-wrapper-orderhistory #cart .caption .item-name, 
+	.data-wrapper-orderhistory #cart .caption .item-value{
+		font-size: 13px;
+	}
+}
+@media screen and (max-width: 320px){
+	#my-personal-page div.title-wrapper::before,
+	#my-personal-page div.title-wrapper::after{
+		min-width: 15%;
+	}
+	.total-sum p{
+		font-size: 12px;
+	}
+}
