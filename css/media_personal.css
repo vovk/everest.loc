@@ -1,4 +1,3 @@
-/*
 
 #personal .my-name{
 	padding: 15px 0 0 25px;
@@ -11,12 +10,12 @@
 	border-bottom: 1px solid #eee;
 	padding-bottom: 15px;
 }
-#personal .my-name span{
+/*#personal .my-name span{
 	display: block;
 	font-size: 16.01px;
 	font-family: OpenSans-Light;
 	font-weight: bold;
-}
+}*/
 #personal .sidebar{
 	border: 1px solid #eee;
 	padding: 20px;
@@ -54,12 +53,7 @@
 	width: 25%;
 	margin-right: 5%;
 	margin-bottom: 40px;
-}----------------------------------------------->
-/*#personal .my-address .form-group:nth-of-type(2n){
-	margin-right: 0;
-}*/
-/*
-<------------------------------------------------
+}
 #personal .my-address .form-group{
 	width: 40%;
 }
@@ -81,7 +75,6 @@
 	margin-top: 25px;
 }
 
-*/
 .data-wrapper-bonus .half{
 	width: 50%;
 	float: left;
@@ -234,6 +227,9 @@ div.total-sum{
 	#personal .my-name h4.with{
 		font-size: 22px;
 	}
+	#personal .my-name{
+		margin-bottom: 25px;
+	}
 }
 @media screen and (max-width: 600px){
 	.data-wrapper-bonus .half{
@@ -303,6 +299,9 @@ div.total-sum{
 	#personal .my-name h4,
 	#personal .my-name h4.with{
 		font-size: 18px;
+	}
+	.data-wrapper-orderhistory span{
+		font-size: 14px!important;
 	}
 }
 @media screen and (max-width: 375px){
